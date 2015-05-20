@@ -12,7 +12,7 @@ module.exports = {
   showNotification: function (options) {
     extend(options, this.defaults);
 
-    if("undefined" !== typeof(process.env.<%= _.kebabCase(props.appname).toUpperCase() %>_CI)) {
+    if("undefined" !== typeof(process.env.VOXEL_HOLOGRAM_CI)) {
       // Running inside a CI environment, do not show notifications
       console.log("[notification]", options.message);
     } else {
