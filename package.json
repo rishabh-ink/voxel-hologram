@@ -9,9 +9,9 @@
   },
   "private": true,
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Rishabh Rao",
+    "email": "rishabhsrao@gmail.com",
+    "url": "http://rishabhsrao.github.io"
   },
   "engines": {
     "node": "0.12.2",

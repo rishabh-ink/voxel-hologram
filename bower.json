@@ -9,9 +9,9 @@
   },
   "private": true,
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Rishabh Rao",
+    "email": "rishabhsrao@gmail.com",
+    "url": "http://rishabhsrao.github.io"
   },
   "dependencies": {
     "jquery": "https://github.com/jquery/jquery.git#1.10.2",
