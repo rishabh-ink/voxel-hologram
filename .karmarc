@@ -1,0 +1,84 @@
+// Karma configuration
+// karma-runner.github.io
+
+module.exports = function(config) {
+  var CFG = require("./tasks/utils/config.js");
+  var path = require("path");
+
+  config.set({
+    basePath: "",
+
+    frameworks: [
+      "jasmine",
+      "requirejs"
+    ],
+
+    files: [
+      // Libraries
+      { pattern: path.join(CFG.DIR.bower, "jquery", "jquery.js"), included: false },
+      { pattern: path.join(CFG.DIR.bower, "jasmine-ajax", "lib", "mock-ajax.js"), included: false },
+      { pattern: path.join(CFG.DIR.bower, "jasmine-jquery", "lib", "jasmine-jquery.js"), included: false },
+      // /Libraries
+
+      // Application
+      { pattern: path.join(CFG.DIR.src, CFG.DIR.script, "**", "*." + CFG.FILE.extension.script.js), included: false },
+      // /Application
+
+      // RequireJS main config
+      { pattern: path.join(CFG.DIR.test, CFG.FILE.config.testMain) },
+      // /RequireJS main config
+
+      // Test scripts and fixtures
+      { pattern: path.join(CFG.DIR.test, "**", "*." + CFG.FILE.extension.script.js), included: false }
+      // /Test scripts and fixtures
+    ],
+
+    exclude: [
+    ],
+
+    reporters: [
+      "spec",
+      "coverage",
+      "junit"
+    ],
+
+    port: 9876,
+
+    colors: true,
+
+    logLevel: config.LOG_INFO,
+
+    autoWatch: false,
+
+    browsers: [
+      "PhantomJS"
+    ],
+
+    singleRun: false,
+
+    coverageReporter: {
+      reporters: [{
+        type: "lcov",
+        dir: path.join(CFG.DIR.report, CFG.DIR.test)
+      }]
+    },
+
+    junitReporter: {
+      outputFile: path.join(CFG.DIR.report, CFG.DIR.test, CFG.FILE.coverageReporter.junit),
+      suite: ""
+    },
+
+    specReporter: {
+       suppressPassed: false,
+       suppressFailed: false,
+       suppressSkipped: false
+    },
+
+    preprocessors: {
+      // FIXME Remove hard-coded folder name.
+      "app/scripts/*.js": [
+        "coverage"
+      ]
+    }
+  });
+};

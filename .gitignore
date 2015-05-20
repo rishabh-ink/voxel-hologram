@@ -1,0 +1,26 @@
+# App
+/dist
+/reports
+
+# Sass (sass-lang.com)
+/.sass-cache
+
+# Node (nodejs.org)
+/node_modules
+npm-debug.log
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Sublime Text (sublimetext.org)
+*.sublime*
+
+# Bundler (bundler.io)
+/.bundle
+
+# Bower (bower.io)
+/libraries
+
+# Istanbul (github.com/gotwarlost/istanbul)
+/coverage

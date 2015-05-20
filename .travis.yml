@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - 0.10.29
+git:
+  depth: 10
+cache: # Caching is only supported for private projects.
+  directories:
+  - ./node_modules
+  - ./libraries
+  - $HOME/.rvm/gems
+before_script:
+  - bundle install
+  - ./node_modules/.bin/bower install
+script:
+  - ./node_modules/.bin/gulp build
+after_success:
+  - ./node_modules/.bin/gulp script:test:report
+notifications:
+  email: false
+before_deploy:
+  - ./node_modules/.bin/gulp clean:deploy
+deploy:
+  provider: heroku
+  app:  voxel-hologram-rsr
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+  api_key:
+    secure: see-the-deploy-section-of-the-readme-to-know-how-to-generate-a-secure-heroku-api-key
