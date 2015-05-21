@@ -33,27 +33,9 @@
       </header>
       <div class="voxel-layouts__content">
         <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
-          <li class="voxel-drawer__index__item">
-            One
-            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
-              <li class="voxel-drawer__index__item">One.One</li>
-              <li class="voxel-drawer__index__item">One.Two</li>
-              <li class="voxel-drawer__index__item">One.Three</li>
-            </ol>
-          </li>
-          <li class="voxel-drawer__index__item">Two</li>
-          <li class="voxel-drawer__index__item">Three</li>
-          <li class="voxel-drawer__index__item">
-            Four
-            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
-              <li class="voxel-drawer__index__item">Four.One</li>
-              <li class="voxel-drawer__index__item">Four.Two</li>
-              <li class="voxel-drawer__index__item">Four.Three</li>
-              <li class="voxel-drawer__index__item">Four.Four</li>
-            </ol>
-          </li>
-          <li class="voxel-drawer__index__item">Five</li>
-          <li class="voxel-drawer__index__item">Six</li>
+          <% @categories.each do |category, file_name| %>
+            <li class="voxel-drawer__index__item"><a href="<%= file_name %>"><%= category %></a></li>
+          <% end %>
         </ol>
       </div> <!-- /.voxel-layouts__content -->
     </aside>
@@ -65,3 +47,6 @@
     </header> <!-- /.voxel-header -->
     <div class="voxel-layouts__page" data-js="voxelDrawerPage">
       <div class="voxel-layouts__content">
+        <% @blocks.each do |b| %>
+          <a href="#<%= b[:name] %>"><%= b[:title] %></a>
+        <% end %>
