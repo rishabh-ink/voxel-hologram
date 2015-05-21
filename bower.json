@@ -28,11 +28,7 @@
     "jquery": "1.10.2"
   },
   "ignore": [
-    "**/.*",
-    "*.sublime*",
-    ".bundle",
-    ".git",
-    ".sass-cache",
+    ".*",
     "Gemfile",
     "Gemfile.lock",
     "gulpfile.js",
