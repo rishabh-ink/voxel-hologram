@@ -9,7 +9,9 @@ var pkg  = require(path.join("..", CFG.FILE.config.pkg));
  */
 gulp.task("source", [], function() {
   var sources = [
-    path.join(CFG.DIR.src, "*.*")
+    path.join(CFG.DIR.src, "*.*"),
+    path.join(CFG.DIR.src, CFG.DIR.codeExampleTemplates, "**/*"),
+    path.join(CFG.DIR.src, CFG.DIR.docAssets, "**/*")
   ];
 
   return gulp.src(sources, { base: path.join(CFG.DIR.src) }) // base will ensure that `dist` does not contain the `lib` directory.
