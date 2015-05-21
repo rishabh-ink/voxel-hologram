@@ -7,7 +7,7 @@
     </div> <!-- /.voxel-layouts__page -->
   </main> <!-- /#voxel -->
 
-  <script src="../libraries/webfontloader/webfontloader.js"></script>
+  <script src="<%= @config['bower_components_dir'] %>/webfontloader/webfontloader.js"></script>
   <script>
     WebFont.load({
       google: {
@@ -18,6 +18,10 @@
       }
     });
   </script>
-  <script src="../libraries/requirejs/require.js" data-main="scripts/main.js"></script>
+  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
+
+  <% @config['js_include'].each do |js| %>
+    <script type="text/javascript" src="<%= js %>"></script>
+  <% end %>
 </body>
 </html>
