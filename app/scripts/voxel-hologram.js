@@ -2,9 +2,9 @@ define(["jquery", "voxel"],
 function($,        Voxel) {
   "use strict";
 
-  var App = {
+  var VoxelHologram = {
     defaults: {
-      name: "App",
+      name: "VoxelHologram",
 
       elements: {
       },
@@ -55,7 +55,6 @@ function($,        Voxel) {
       console.log(this.options.name, "setup()", "Setting up components");
 
       this.components.voxel = Voxel.create({
-        name: "voxel-hologram",
         useHighlight: false
       });
 
@@ -69,5 +68,5 @@ function($,        Voxel) {
     }
   };
 
-  return Object.create(App);
+  return Object.create(VoxelHologram);
 });

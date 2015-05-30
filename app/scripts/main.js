@@ -6,7 +6,7 @@
       // Libraries
       "jquery": "../../libraries/jquery/jquery",
       "hljs": "../../libraries/highlightjs/highlight.pack",
-      "voxel": "../../libraries/voxel/dist/scripts/main"
+      "voxel": "../../libraries/voxel/dist/scripts/voxel"
       // /Libraries
     },
 
@@ -14,8 +14,8 @@
     }
   });
 
-  require(["jquery", "app"],
-  function( $,        App) {
-    console.log("App v%s with jQuery v%s says, '%s'", App.version, $.fn.jquery, App.greeting);
+  require(["jquery", "voxel-hologram"],
+  function( $,        VoxelHologram) {
+    var voxelHologram = VoxelHologram.create();
   });
 })(window, document);

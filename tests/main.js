@@ -22,11 +22,11 @@ require.config({
     // /Libraries
 
     // Application
-    "app": "app/scripts/app",
+    "voxel-hologram": "app/scripts/voxel-hologram",
     // /Application
 
     // Fixtures
-    "app-fixture": "tests/fixtures/app-fixture"
+    "voxel-hologram-fixture": "tests/fixtures/voxel-hologram-fixture"
     // /Fixtures
   },
 
