@@ -9,7 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <link rel="stylesheet" href="../dist/styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Source CSS to document -->
+  <% @config['css_include'].each do |css| %>
+    <link rel="stylesheet" href="<%= css %>">
+  <% end %>
 
   <script src="scripts/libraries/modernizr.custom.js"></script>
 
