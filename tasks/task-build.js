@@ -6,7 +6,7 @@ var notify = require("./utils/notify");
  * Build
  * Creates a build artifact, ready for deployment.
  */
-gulp.task("build", ["style:compile", "script:minify", "image:minify", "source"], function(callback) {
+gulp.task("build", ["style:compile", "script:optimize", "image:minify", "source"], function(callback) {
   notify.showNotification({
     subtitle: "Task build",
     message: "Build complete!"
