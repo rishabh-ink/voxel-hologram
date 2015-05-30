@@ -4,13 +4,8 @@
   require.config({
     paths: {
       // Libraries
-      "jquery": "../../libraries/jquery/jquery",
+      "jquery": "../../libraries/jquery/jquery"
       // /Libraries
-
-      // Application
-      "app": "app",
-      "example": "components/example"
-      // /Application
     },
 
     shim: {
