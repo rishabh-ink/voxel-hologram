@@ -16,6 +16,8 @@ module.exports = function(config) {
     files: [
       // Libraries
       { pattern: path.join(CFG.DIR.bower, "jquery", "jquery.js"), included: false },
+      { pattern: path.join(CFG.DIR.bower, "highlightjs", "highlight.pack.js"), included: false },
+      { pattern: path.join(CFG.DIR.bower, "voxel", "dist", "scripts", "main.js"), included: false },
       { pattern: path.join(CFG.DIR.bower, "jasmine-ajax", "lib", "mock-ajax.js"), included: false },
       { pattern: path.join(CFG.DIR.bower, "jasmine-jquery", "lib", "jasmine-jquery.js"), included: false },
       // /Libraries
