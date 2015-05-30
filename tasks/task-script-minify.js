@@ -10,7 +10,7 @@ var pkg  = require(path.join("..", CFG.FILE.config.pkg));
  * @see github.com/mishoo/UglifyJS
  * @deprecaded in favor of `script:optimize`
  */
-gulp.task("script:minify", ["script:test", "script:minify:json"], function () {
+gulp.task("script:minify", ["script:optimize", "script:minify:json", "source"], function () {
   // TODO Use gulp-header to add version info.
 
   return gulp.src([

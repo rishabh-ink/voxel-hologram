@@ -12,7 +12,7 @@ module.exports = {
     fixture: "fixtures",
     data: "data",
     unit: "unit",
-    vendor: "vendor",
+    vendor: "libraries",
     gulp: "tasks",
     asset: "assets",
     util: "utils",
