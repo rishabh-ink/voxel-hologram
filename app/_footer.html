@@ -18,7 +18,7 @@
       }
     });
   </script>
-  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
+  <script src="<%= @config['requirejs_lib'] %>" data-main="<%= @config['requirejs_main'] %>"></script>
 
   <% @config['js_include'].each do |js| %>
     <script type="text/javascript" src="<%= js %>"></script>
