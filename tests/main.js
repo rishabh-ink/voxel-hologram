@@ -23,7 +23,6 @@ require.config({
 
     // Application
     "app": "app/scripts/app",
-    "components/example": "app/scripts/components/example",
     // /Application
 
     // Fixtures

@@ -3,7 +3,6 @@ function($,        Voxel) {
   "use strict";
 
   var App = {
-    greeting: "Hello world!",
     defaults: {
       name: "App",
 
