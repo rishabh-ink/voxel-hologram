@@ -57,6 +57,7 @@ You can run a task using `./node_modules/.bin/gulp {{task-name}}`. The following
 * **script:lint** Lints the JavaScript files using [JSHint](https://github.com/jshint/jshint).
 * **script:minify:json** Minifies the JSON files using [JSON Minify](https://www.npmjs.org/package/gulp-jsonminify).
 * **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
+* **script:optimize** Combines and optimizes all RequireJS modules into one file using [RequireJS Optimizer](http://requirejs.org/docs/optimization.html).
 * **script:test:report** Uploads the code coverage report to [Coveralls](https://coveralls.io).
 * **script:test:unit** Runs the JavaScript unit tests using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
 * **script:test** Runs all the JavaScript tests.
