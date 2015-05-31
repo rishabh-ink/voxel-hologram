@@ -18,7 +18,17 @@
       }
     });
   </script>
+
   <script src="<%= @config['requirejs_lib'] %>" data-main="<%= @config['requirejs_main'] %>"></script>
+
+  <script>
+    require(["scripts/voxel-hologram"],
+    function (VoxelHologram) {
+      "use strict";
+
+      var voxelHologram = VoxelHologram.create();
+    });
+  </script>
 
   <% @config['js_include'].each do |js| %>
     <script type="text/javascript" src="<%= js %>"></script>
