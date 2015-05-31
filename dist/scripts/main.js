@@ -1,1 +1,1 @@
-!function(i,e,r){"use strict";require.config({paths:{jquery:"../../libraries/jquery/jquery",hljs:"../../libraries/highlightjs/highlight.pack",voxel:"../../libraries/voxel/dist/scripts/voxel"},shim:{}}),require(["jquery","voxel-hologram"],function(i,e){e.create()})}(window,document);
+require.config({paths:{jquery:"../../libraries/jquery/jquery",hljs:"../../libraries/highlightjs/highlight.pack",voxel:"../../libraries/voxel/dist/scripts/voxel"},shim:{}});
