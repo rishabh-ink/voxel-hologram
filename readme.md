@@ -102,7 +102,7 @@ bundle exec travis encrypt $(heroku auth:token) --add deploy.api_key
 
 :tophat: **Tip** The `#75` above is the [release tag](https://github.com/heroku/heroku-buildpack-nodejs/releases) for the project. Use the latest tag for best results.
 
-:tophat: **Tip** The non-minified version of this project is also deployed to [Heroku at /app](http://voxel-hologram-rsr.herokuapp.com/app).
+:tophat: **Tip** The non-minified version of this project is also deployed to Heroku at [voxel-hologram-rsr.herokuapp.com/app](http://voxel-hologram-rsr.herokuapp.com/app).
 
 
 ## :scroll: License
