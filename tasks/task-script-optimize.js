@@ -1,10 +1,10 @@
-var gulp   = require("gulp");
-var CFG    = require("./utils/config.js");
-var $      = require("gulp-load-plugins")();
-var path   = require("path");
-var pkg    = require(path.join("..", CFG.FILE.config.pkg));
+var gulp = require("gulp");
+var CFG = require("./utils/config.js");
+var $ = require("gulp-load-plugins")();
+var path = require("path");
+var pkg = require(path.join("..", CFG.FILE.config.pkg));
 var notify = require("./utils/notify-script-test-unit");
-var rjs    = require("requirejs");
+var rjs = require("requirejs");
 
 /**
  * script:optimize

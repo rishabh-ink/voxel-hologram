@@ -1,8 +1,8 @@
 var notifier = new require("node-notifier");
-var extend   = require("extend");
-var path     = require("path");
-var CFG      = require("./config.js");
-var pkg      = require(path.join("..", "..", CFG.FILE.config.pkg));
+var extend = require("extend");
+var path = require("path");
+var CFG = require("./config.js");
+var pkg = require(path.join("..", "..", CFG.FILE.config.pkg));
 
 module.exports = {
   defaults: {

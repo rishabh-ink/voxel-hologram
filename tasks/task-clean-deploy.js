@@ -1,6 +1,6 @@
 var gulp = require("gulp");
-var CFG  = require("./utils/config.js");
-var del  = require("del");
+var CFG = require("./utils/config.js");
+var del = require("del");
 
 /**
  * clean

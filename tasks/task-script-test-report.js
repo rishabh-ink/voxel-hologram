@@ -1,6 +1,6 @@
 var gulp = require("gulp");
-var CFG  = require("./utils/config.js");
-var $    = require("gulp-load-plugins")();
+var CFG = require("./utils/config.js");
+var $ = require("gulp-load-plugins")();
 var path = require("path");
 
 /**

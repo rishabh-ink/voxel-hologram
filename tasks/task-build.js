@@ -1,5 +1,5 @@
-var gulp   = require("gulp");
-var $      = require("gulp-load-plugins")();
+var gulp = require("gulp");
+var $ = require("gulp-load-plugins")();
 var notify = require("./utils/notify");
 
 /**

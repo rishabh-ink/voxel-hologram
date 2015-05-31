@@ -1,9 +1,9 @@
-var gulp   = require("gulp");
-var CFG    = require("./utils/config.js");
-var $      = require("gulp-load-plugins")();
-var path   = require("path");
-var pkg    = require(path.join("..", CFG.FILE.config.pkg));
-var exec   = require("child_process").exec;
+var gulp = require("gulp");
+var CFG = require("./utils/config.js");
+var $ = require("gulp-load-plugins")();
+var path = require("path");
+var pkg = require(path.join("..", CFG.FILE.config.pkg));
+var exec = require("child_process").exec;
 var notify = require("./utils/notify-style-compile");
 
 /**

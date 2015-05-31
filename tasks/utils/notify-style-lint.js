@@ -1,5 +1,5 @@
 var notify = require("./notify");
-var util   = require("util");
+var util = require("util");
 
 module.exports = function notifyStyleLint (stdout) {
   var messages = stdout.split("\n");
