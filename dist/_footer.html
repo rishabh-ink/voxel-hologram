@@ -1,7 +1,7 @@
         <hr>
 
         <footer>
-          <p><small>Voxel &mdash; A minimal theme. Made with &hearts; during the summer of 2015 in Bangalore, India.</small></p>
+          <p><small>Voxel Hologram. Handcrafted with &hearts;.</small></p>
         </footer>
       </div> <!-- /.voxel-layouts__content -->
     </div> <!-- /.voxel-layouts__page -->
@@ -19,19 +19,13 @@
     });
   </script>
 
-  <script src="<%= @config['requirejs_lib'] %>" data-main="<%= @config['requirejs_main'] %>"></script>
+  <!-- Ensure Voxel Hologram gets initialized in user's main script. -->
+  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
 
-  <script>
-    require(["scripts/voxel-hologram"],
-    function (VoxelHologram) {
-      "use strict";
-
-      var voxelHologram = VoxelHologram.create();
-    });
-  </script>
-
+  <!-- User scripts. -->
   <% @config['js_include'].each do |js| %>
     <script type="text/javascript" src="<%= js %>"></script>
   <% end %>
+  <!-- /User scripts. -->
 </body>
 </html>
