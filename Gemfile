@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'compass', '1.0.3'
 
 # OilyPNG (rubygems.org/gems/oily_png)
-gem 'oily_png', '1.1.2'
+gem 'oily_png', '1.2.0'
 
 # Sass CSS Importer (rubygems.org/gems/sass-css-importer)
 gem 'sass-css-importer', '1.0.0.beta.0'
@@ -13,4 +13,4 @@ gem 'sass-css-importer', '1.0.0.beta.0'
 gem 'scss_lint', '0.38.0'
 
 # Travis (rubygems.org/gems/travis)
-gem 'travis', '1.7.6'
+gem 'travis', '1.7.7'
