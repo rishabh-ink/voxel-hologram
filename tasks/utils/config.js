@@ -18,6 +18,7 @@ module.exports = {
     util: "utils",
     git: ".git",
     codeExampleTemplates: "code-example-templates",
+    codeExampleRenderers: "code-example-renderers",
     docAssets: "doc-assets",
 
     report: "reports",
