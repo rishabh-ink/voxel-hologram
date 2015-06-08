@@ -19,12 +19,3 @@ notifications:
   email: false
 before_deploy:
   - ./node_modules/.bin/gulp clean:deploy
-deploy:
-  provider: heroku
-  app:  voxel-hologram-rsr
-  skip_cleanup: true
-  on:
-    all_branches: true
-    tags: true
-  api_key:
-    secure: see-the-deploy-section-of-the-readme-to-know-how-to-generate-a-secure-heroku-api-key
