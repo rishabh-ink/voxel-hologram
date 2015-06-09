@@ -11,7 +11,6 @@ gulp.task("source", [], function() {
   var sources = [
     path.join(CFG.DIR.src, "*.*"),
     path.join(CFG.DIR.src, CFG.DIR.codeExampleTemplates, "**/*"),
-    path.join(CFG.DIR.src, CFG.DIR.codeExampleRenderers, "**/*"),
     path.join(CFG.DIR.src, CFG.DIR.docAssets, "**/*"),
     path.join(CFG.DIR.src, CFG.DIR.script, CFG.FILE.config.scriptMain),
     path.join(CFG.DIR.src, CFG.DIR.script, CFG.DIR.vendor, "**/*")
