@@ -62,10 +62,11 @@
       </header> <!-- /.voxel-header -->
     </div> <!-- /.voxel-hologram__content -->
 
-    <div class="voxel-layouts__page" data-js="voxelDrawerPage">
-      <div class="voxel-layouts__content">
-        <% @blocks.each do |block| %>
-          <a href="#<%= block[:name] %>"><%= block[:title] %></a>
-        <% end %>
+    <div class="voxel-hologram__content">
+      <div class="voxel-layouts__page" data-js="voxelDrawerPage">
+        <div class="voxel-layouts__content">
+          <% @blocks.each do |block| %>
+            <a href="#<%= block[:name] %>"><%= block[:title] %></a>
+          <% end %>
 
-        <div class="voxel-hologram__content">
+          <div class="voxel-hologram__content">
