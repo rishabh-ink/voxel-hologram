@@ -17,7 +17,7 @@
   "dependencies": {
     "jquery": "https://github.com/jquery/jquery.git#1.10.2",
     "requirejs": "https://github.com/jrburke/requirejs-bower.git#2.1.17",
-    "voxel": "https://github.com/rishabhsrao/voxel.git#0.0.16"
+    "voxel": "https://github.com/rishabhsrao/voxel.git#0.0.17"
   },
   "devDependencies": {
     "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#3.1.1",
