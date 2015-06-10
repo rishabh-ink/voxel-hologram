@@ -10,8 +10,7 @@ var pkg = require(path.join("..", CFG.FILE.config.pkg));
 gulp.task("source", [], function() {
   var sources = [
     path.join(CFG.DIR.src, "*.*"),
-    path.join(CFG.DIR.src, CFG.DIR.codeExampleTemplates, "**/*"),
-    path.join(CFG.DIR.src, CFG.DIR.docAssets, "**/*"),
+    path.join(CFG.DIR.src, CFG.DIR.template, "**/*"),
     path.join(CFG.DIR.src, CFG.DIR.script, CFG.FILE.config.scriptMain),
     path.join(CFG.DIR.src, CFG.DIR.script, CFG.DIR.vendor, "**/*")
   ];

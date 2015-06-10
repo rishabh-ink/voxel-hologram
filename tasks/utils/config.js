@@ -17,8 +17,6 @@ module.exports = {
     asset: "assets",
     util: "utils",
     git: ".git",
-    codeExampleTemplates: "code-example-templates",
-    docAssets: "doc-assets",
 
     report: "reports",
     coverage: "coverage",
