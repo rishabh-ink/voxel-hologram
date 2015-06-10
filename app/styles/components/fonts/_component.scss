@@ -1,63 +1,63 @@
-#voxel .voxel-hologram__content body {
+#voxel .voxel-hologram__content > body {
   @include voxel-fonts__body();
 }
 
-#voxel .voxel-hologram__content p {
+#voxel .voxel-hologram__content > p {
   @include voxel-fonts__paragraph();
 }
 
-#voxel .voxel-hologram__content h1,
-#voxel .voxel-hologram__content h2,
-#voxel .voxel-hologram__content h3,
-#voxel .voxel-hologram__content h4,
-#voxel .voxel-hologram__content h5,
-#voxel .voxel-hologram__content h6 {
+#voxel .voxel-hologram__content > h1,
+#voxel .voxel-hologram__content > h2,
+#voxel .voxel-hologram__content > h3,
+#voxel .voxel-hologram__content > h4,
+#voxel .voxel-hologram__content > h5,
+#voxel .voxel-hologram__content > h6 {
   @include voxel-fonts__headings--h123456();
 }
 
-#voxel .voxel-hologram__content h1,
-#voxel .voxel-hologram__content h2,
-#voxel .voxel-hologram__content h3,
-#voxel .voxel-hologram__content h4 {
+#voxel .voxel-hologram__content > h1,
+#voxel .voxel-hologram__content > h2,
+#voxel .voxel-hologram__content > h3,
+#voxel .voxel-hologram__content > h4 {
   @include voxel-fonts__headings--h1234();
 }
 
-#voxel .voxel-hologram__content h1 {
+#voxel .voxel-hologram__content > h1 {
   @include voxel-fonts__headings--h1();
 }
 
-#voxel .voxel-hologram__content h2 {
+#voxel .voxel-hologram__content > h2 {
   @include voxel__fonts__headings--h2();
 }
 
-#voxel .voxel-hologram__content h3 {
+#voxel .voxel-hologram__content > h3 {
   @include voxel__fonts__headings--h3();
 }
 
-#voxel .voxel-hologram__content h4 {
+#voxel .voxel-hologram__content > h4 {
   @include voxel__fonts__headings--h4();
 }
 
-#voxel .voxel-hologram__content h5 {
+#voxel .voxel-hologram__content > h5 {
   @include voxel__fonts__headings--h5();
 }
 
-#voxel .voxel-hologram__content h6 {
+#voxel .voxel-hologram__content > h6 {
   @include voxel__fonts__headings--h6();
 }
 
-#voxel .voxel-hologram__content small {
+#voxel .voxel-hologram__content > small {
   @include voxel__fonts__small();
 }
 
-#voxel .voxel-hologram__content a {
+#voxel .voxel-hologram__content > a {
   @include voxel__fonts__a();
 }
 
-#voxel .voxel-hologram__content code {
+#voxel .voxel-hologram__content > code {
   @include voxel__fonts__code();
 }
 
-#voxel .voxel-hologram__content pre code {
+#voxel .voxel-hologram__content > pre code {
   @include voxel-fonts__pre__code();
 }

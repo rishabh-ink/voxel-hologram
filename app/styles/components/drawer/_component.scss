@@ -1,31 +1,31 @@
-#voxel .voxel-hologram__content .voxel-drawer {
+#voxel .voxel-hologram__content > .voxel-drawer {
   @include voxel-drawer();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer--active {
+#voxel .voxel-hologram__content > .voxel-drawer--active {
   @include voxel-drawer--active();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__toggle {
+#voxel .voxel-hologram__content > .voxel-drawer__toggle {
   @include voxel-drawer__toggle();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__toggle--active {
+#voxel .voxel-hologram__content > .voxel-drawer__toggle--active {
   @include voxel-drawer__toggle--active();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__title {
+#voxel .voxel-hologram__content > .voxel-drawer__title {
   @include voxel-drawer__title();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__header {
+#voxel .voxel-hologram__content > .voxel-drawer__header {
   @include voxel-drawer__header();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__index {
+#voxel .voxel-hologram__content > .voxel-drawer__index {
   @include voxel-drawer__index();
 }
 
-#voxel .voxel-hologram__content .voxel-drawer__index__item {
+#voxel .voxel-hologram__content > .voxel-drawer__index__item {
   @include voxel-drawer__index__item();
 }
