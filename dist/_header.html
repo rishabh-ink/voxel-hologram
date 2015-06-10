@@ -36,27 +36,31 @@
   <![endif]-->
 
   <main id="voxel">
-    <aside data-js="voxelDrawer" class="voxel-drawer">
-      <header class="voxel-drawer__header">
-        <a href="#" class="voxel-drawer__title">Voxel</a>
-      </header>
-      <div class="voxel-layouts__content">
-        <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
-          <% @categories.each do |category, file_name| %>
-            <li class="voxel-drawer__index__item">
-              <a href="<%= file_name %>"><%= category %></a>
-            </li>
-          <% end %>
-        </ol>
-      </div> <!-- /.voxel-layouts__content -->
-    </aside>
+    <div class="voxel-hologram__content">
+      <aside data-js="voxelDrawer" class="voxel-drawer">
+        <header class="voxel-drawer__header">
+          <a href="#" class="voxel-drawer__title">Voxel</a>
+        </header>
+        <div class="voxel-layouts__content">
+          <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+            <% @categories.each do |category, file_name| %>
+              <li class="voxel-drawer__index__item">
+                <a href="<%= file_name %>"><%= category %></a>
+              </li>
+            <% end %>
+          </ol> <!-- /.voxel-drawer__index -->
+        </div> <!-- /.voxel-layouts__content -->
+      </aside> <!-- /.voxel-drawer -->
+    </div> <!-- /.voxel-hologram__content -->
 
-    <header class="voxel-header">
-      <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
-      <div class="voxel-layouts__content">
-        <a href="#" class="voxel-header__title">Voxel</a> <span class="voxel-header__subtitle">A minimal theme.</span>
-      </div> <!-- /.voxel-layouts__content -->
-    </header> <!-- /.voxel-header -->
+    <div class="voxel-hologram__content">
+      <header class="voxel-header">
+        <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
+        <div class="voxel-layouts__content">
+          <a href="#" class="voxel-header__title">Voxel</a> <span class="voxel-header__subtitle">A minimal theme.</span>
+        </div> <!-- /.voxel-layouts__content -->
+      </header> <!-- /.voxel-header -->
+    </div> <!-- /.voxel-hologram__content -->
 
     <div class="voxel-layouts__page" data-js="voxelDrawerPage">
       <div class="voxel-layouts__content">
