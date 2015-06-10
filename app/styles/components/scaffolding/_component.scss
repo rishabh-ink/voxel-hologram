@@ -1,0 +1,32 @@
+#voxel .voxel-hologram__content *,
+#voxel .voxel-hologram__content *:before,
+#voxel .voxel-hologram__content *:after {
+  @include box-sizing($voxel-scaffolding__box-sizing);
+}
+
+// Do not style `body` because we do not want to touch the user's styles.
+// Instead style everything inside `.voxel-hologram__content` only. That's us.
+#voxel .voxel-hologram__content {
+  background-color: $voxel-scaffolding__body__background-color;
+}
+
+// scss-lint:disable QualifyingElement
+html.js.voxel-opacity {
+  opacity: 0;
+}
+
+html.voxel-csstransitions.wf-inactive,
+html.voxel-csstransitions.wf-active {
+  @include transition-duration(.5s);
+  @include transition-property(opacity);
+}
+
+html.js.voxel-opacity.wf-inactive,
+html.js.voxel-opacity.wf-active {
+  opacity: 1;
+}
+// scss-lint:enable QualifyingElement
+
+#voxel .voxel-hologram__content hr {
+  @include voxel-scaffolding__hr();
+}
