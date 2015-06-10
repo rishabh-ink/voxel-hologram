@@ -1,5 +1,5 @@
-// Do (not?) generate CSS classes from Voxel as we'll use the Voxel mixins.
-$voxel-components__include-classes: true;
+// Do not generate CSS classes from Voxel as we'll use the Voxel mixins.
+$voxel-components__include-classes: false;
 
 // Do generate CSS scaffolding classes from Voxel as they don't have corresponding mixins.
 $voxel-scaffolding__include-classes: true;

@@ -1,0 +1,7 @@
+#voxel .voxel-hologram__content .voxel-layouts__content {
+  @include voxel-layouts__content();
+}
+
+#voxel .voxel-hologram__content .voxel-layouts__image {
+  @include voxel-layouts__image();
+}

@@ -1,0 +1,11 @@
+#voxel .voxel-hologram__content .voxel-header {
+  @include voxel-header();
+}
+
+#voxel .voxel-hologram__content .voxel-header__title {
+  @include voxel-header__title();
+}
+
+#voxel .voxel-hologram__content .voxel-header__subtitle {
+  @include voxel-header__subtitle();
+}
