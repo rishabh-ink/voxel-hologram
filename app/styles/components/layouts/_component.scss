@@ -1,10 +1,12 @@
-// We cannot use the selector `#voxel .voxel-hologram__content .voxel-layouts__content`...
-#voxel .voxel-layouts__content {
-  @include voxel-layouts__content();
-}
+#voxel {
+  // We cannot use the selector `#voxel .voxel-hologram__content .voxel-layouts__content`...
+  .voxel-layouts__content {
+    @include voxel-layouts__content();
+  }
 
-// ... or `.voxel-layouts__content .voxel-layouts__image` because other components
-// use it to style elements inside them and that conflicts with the user's styles.
-#voxel .voxel-layouts__image {
-  @include voxel-layouts__image();
+  // ... or `.voxel-layouts__content .voxel-layouts__image` because other components
+  // use it to style elements inside them and that conflicts with the user's styles.
+  .voxel-layouts__image {
+    @include voxel-layouts__image();
+  }
 }

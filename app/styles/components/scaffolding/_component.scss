@@ -27,6 +27,8 @@ html.js.voxel-opacity.wf-active {
 }
 // scss-lint:enable QualifyingElement
 
+// scss-lint:disable MergeableSelector
 #voxel .voxel-hologram__content hr {
   @include voxel-scaffolding__hr();
 }
+// scss-lint:enable MergeableSelector

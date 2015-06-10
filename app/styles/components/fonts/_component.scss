@@ -1,70 +1,70 @@
 // Set a root font size as Voxel uses `rem`s for measurements.
 /*html*/#voxel {
   font-size: $voxel-fonts__font-size--base;
-}
 
-// Do not style `body` because we do not want to touch the user's styles.
-// Instead style everything inside `.voxel-hologram__content` only. That's us.
-#voxel .voxel-hologram__content {
-  @include voxel-fonts__body();
-}
+  // Do not style `body` because we do not want to touch the user's styles.
+  // Instead style everything inside `.voxel-hologram__content` only. That's us.
+  .voxel-hologram__content {
+    @include voxel-fonts__body();
 
-#voxel .voxel-hologram__content p {
-  @include voxel-fonts__paragraph();
-}
+    p {
+      @include voxel-fonts__paragraph();
+    }
 
-#voxel .voxel-hologram__content h1,
-#voxel .voxel-hologram__content h2,
-#voxel .voxel-hologram__content h3,
-#voxel .voxel-hologram__content h4,
-#voxel .voxel-hologram__content h5,
-#voxel .voxel-hologram__content h6 {
-  @include voxel-fonts__headings--h123456();
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include voxel-fonts__headings--h123456();
+    }
 
-#voxel .voxel-hologram__content h1,
-#voxel .voxel-hologram__content h2,
-#voxel .voxel-hologram__content h3,
-#voxel .voxel-hologram__content h4 {
-  @include voxel-fonts__headings--h1234();
-}
+    h1,
+    h2,
+    h3,
+    h4 {
+      @include voxel-fonts__headings--h1234();
+    }
 
-#voxel .voxel-hologram__content h1 {
-  @include voxel-fonts__headings--h1();
-}
+    h1 {
+      @include voxel-fonts__headings--h1();
+    }
 
-#voxel .voxel-hologram__content h2 {
-  @include voxel__fonts__headings--h2();
-}
+    h2 {
+      @include voxel__fonts__headings--h2();
+    }
 
-#voxel .voxel-hologram__content h3 {
-  @include voxel__fonts__headings--h3();
-}
+    h3 {
+      @include voxel__fonts__headings--h3();
+    }
 
-#voxel .voxel-hologram__content h4 {
-  @include voxel__fonts__headings--h4();
-}
+    h4 {
+      @include voxel__fonts__headings--h4();
+    }
 
-#voxel .voxel-hologram__content h5 {
-  @include voxel__fonts__headings--h5();
-}
+    h5 {
+      @include voxel__fonts__headings--h5();
+    }
 
-#voxel .voxel-hologram__content h6 {
-  @include voxel__fonts__headings--h6();
-}
+    h6 {
+      @include voxel__fonts__headings--h6();
+    }
 
-#voxel .voxel-hologram__content small {
-  @include voxel__fonts__small();
-}
+    small {
+      @include voxel__fonts__small();
+    }
 
-#voxel .voxel-hologram__content a {
-  @include voxel__fonts__a();
-}
+    a {
+      @include voxel__fonts__a();
+    }
 
-#voxel .voxel-hologram__content code {
-  @include voxel__fonts__code();
-}
+    code {
+      @include voxel__fonts__code();
+    }
 
-#voxel .voxel-hologram__content pre code {
-  @include voxel-fonts__pre__code();
+    pre code {
+      @include voxel-fonts__pre__code();
+    }
+  }
 }
