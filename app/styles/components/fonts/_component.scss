@@ -8,63 +8,63 @@
   .voxel-hologram__content {
     @include voxel-fonts__body();
 
-    > p {
+    p {
       @include voxel-fonts__paragraph();
     }
 
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       @include voxel-fonts__headings--h123456();
     }
 
-    > h1,
-    > h2,
-    > h3,
-    > h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       @include voxel-fonts__headings--h1234();
     }
 
-    > h1 {
+    h1 {
       @include voxel-fonts__headings--h1();
     }
 
-    > h2 {
+    h2 {
       @include voxel__fonts__headings--h2();
     }
 
-    > h3 {
+    h3 {
       @include voxel__fonts__headings--h3();
     }
 
-    > h4 {
+    h4 {
       @include voxel__fonts__headings--h4();
     }
 
-    > h5 {
+    h5 {
       @include voxel__fonts__headings--h5();
     }
 
-    > h6 {
+    h6 {
       @include voxel__fonts__headings--h6();
     }
 
-    > small {
+    small {
       @include voxel__fonts__small();
     }
 
-    > a {
+    a {
       @include voxel__fonts__a();
     }
 
-    > code {
+    code {
       @include voxel__fonts__code();
     }
 
-    > pre code {
+    pre code {
       @include voxel-fonts__pre__code();
     }
   }
