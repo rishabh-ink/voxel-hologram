@@ -12,7 +12,7 @@
 
 ## :star: Live demo
 
-The live demo is hosted on [Heroku](http://www.heroku.com) at [voxel-hologram-rsr.herokuapp.com/dist](http://voxel-hologram-rsr.herokuapp.com/dist).
+See the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project for a [live demo](http://voxel-hologram-example-rsr.herokuapp.com/dist/docs/index.html).
 
 
 ## :rowboat: Get started
