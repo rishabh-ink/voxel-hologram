@@ -8,7 +8,7 @@ module.exports = {
     style: "styles",
     image: "images",
     test: "tests",
-    template: "templates",
+    template: "_templates",
     fixture: "fixtures",
     data: "data",
     unit: "unit",
