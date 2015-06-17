@@ -1,1 +1,1 @@
-require.config({paths:{jquery:"../../libraries/jquery/jquery",hljs:"../../libraries/highlightjs/highlight.pack",voxel:"../../libraries/voxel/dist/scripts/voxel"},shim:{}});
+require.config({paths:{jquery:"../../libraries/jquery/jquery",voxel:"../../libraries/voxel/dist/scripts/voxel"},shim:{}});
