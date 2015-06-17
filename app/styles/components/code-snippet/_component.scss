@@ -3,6 +3,14 @@
     @include voxel-code-snippet();
   }
 
+  .voxel-code-snippet--html {
+    @include voxel-code-snippet--html();
+  }
+
+  .voxel-code-snippet--js {
+    @include voxel-code-snippet--js();
+  }
+
   .voxel-code-snippet pre {
     @include voxel-code-snippet__pre();
   }
