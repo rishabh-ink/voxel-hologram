@@ -79,8 +79,8 @@ linters:
     style: exclude_zero # or 'include_zero'
 
   MergeableSelector:
-    enabled: true
-    force_nesting: true
+    enabled: false
+    force_nesting: false
 
   NameFormat:
     enabled: false
