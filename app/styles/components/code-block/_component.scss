@@ -1,0 +1,9 @@
+@import "settings";
+@import "mixins";
+@import "documentation";
+
+#voxel {
+  .voxel-hologram-code-block__example {
+    @include voxel-hologram-code-block__example();
+  }
+}

@@ -1,0 +1,17 @@
+@mixin voxel-hologram-code-block__example() {
+  padding: $voxel-hologram-code-block__example__padding;
+  border-width: $voxel-hologram-code-block__example__border--width;
+  border-style: $voxel-hologram-code-block__example__border--style;
+  border-color: $voxel-hologram-code-block__example__border--color;
+
+  &:before {
+    background-image: url("../images/example.png");
+    content: "";
+    display: block;
+    height: $voxel-hologram-code-block__icon__height;
+    position: absolute;
+    right: $voxel-hologram-code-block__icon__right;
+    top: $voxel-hologram-code-block__icon__top;
+    width: $voxel-hologram-code-block__icon__width;
+  }
+}

@@ -1,0 +1,7 @@
+$voxel-hologram-code-block__include-classes: $voxel-components__include-classes !default;
+
+$voxel-hologram-code-block__example__padding: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+
+$voxel-hologram-code-block__example__border--width: 1px !default;
+$voxel-hologram-code-block__example__border--style: solid !default;
+$voxel-hologram-code-block__example__border--color: map-get($voxel-colors__brand--primary, "50") !default;
