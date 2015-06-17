@@ -1,0 +1,9 @@
+#voxel {
+  .voxel-code-snippet {
+    @include voxel-code-snippet();
+  }
+
+  .voxel-code-snippet pre {
+    @include voxel-code-snippet__pre();
+  }
+}
