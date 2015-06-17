@@ -54,9 +54,7 @@ function($,        Voxel) {
     setup: function() {
       console.log(this.options.name, "setup()", "Setting up components");
 
-      this.components.voxel = Voxel.create({
-        useHighlight: false
-      });
+      this.components.voxel = Voxel.create();
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 

@@ -21,7 +21,6 @@ gulp.task("script:optimize", ["script:test"], function (callback) {
       CFG.FILE.config.appModule
     ],
     exclude: [
-      "hljs",
       "jquery",
       "voxel"
       // Add additional libraries to exclude.
