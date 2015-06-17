@@ -21,11 +21,11 @@ class VoxelHologramMarkdownRenderer < Redcarpet::Render::HTML
 
         '</div> <!-- /.voxel-hologram__content -->' +
 
-        '<div class="voxel-code-block">' +
-          '<div class="voxel-code-block__example  voxel-code-block__example--html">' +
+        '<div class="voxel-hologram-code-block">' +
+          '<div class="voxel-hologram-code-block__example  voxel-hologram-code-block__example--html">' +
             render_html(code, language) +
-          '</div> <!-- /.voxel-code-block__example -->' +
-        '</div> <!-- /.voxel-code-block -->' +
+          '</div> <!-- /.voxel-hologram-code-block__example -->' +
+        '</div> <!-- /.voxel-hologram-code-block -->' +
 
         '<div class="voxel-hologram__content">'
 
@@ -34,15 +34,15 @@ class VoxelHologramMarkdownRenderer < Redcarpet::Render::HTML
 
         '</div> <!-- /.voxel-hologram__content -->' +
 
-        '<div class="voxel-code-block">' +
-          '<div class="voxel-code-block__example  voxel-code-block__example--html">' +
+        '<div class="voxel-hologram-code-block">' +
+          '<div class="voxel-hologram-code-block__example  voxel-hologram-code-block__example--html">' +
             render_html(code, language) +
-          '</div> <!-- /.voxel-code-block__example -->' +
+          '</div> <!-- /.voxel-hologram-code-block__example -->' +
 
           '<div class="voxel-code-snippet  voxel-code-snippet--html  syntax">' +
             '<pre>' + formatter.format(lexer.lex(code)) + '</pre>' +
           '</div> <!-- /.voxel-code-snippet -->' +
-        '</div> <!-- /.voxel-code-block -->' +
+        '</div> <!-- /.voxel-hologram-code-block -->' +
 
         '<div class="voxel-hologram__content">'
       end
