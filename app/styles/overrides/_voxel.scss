@@ -1,2 +1,5 @@
 // Do not generate CSS classes from Voxel as we'll use the Voxel mixins.
 $voxel-components__include-classes: false;
+
+// Need more space to display the style guide.
+$voxel-layouts__content__max-width: 64rem;
