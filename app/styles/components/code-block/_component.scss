@@ -7,6 +7,10 @@
     @include voxel-hologram-code-block__example();
   }
 
+  .voxel-hologram-code-block__example__container {
+    @include voxel-hologram-code-block__example__container();
+  }
+
   // Remove the space between the rendered example and its code.
   .voxel-hologram-code-block__example + .voxel-code-snippet {
     margin-top: 0;
