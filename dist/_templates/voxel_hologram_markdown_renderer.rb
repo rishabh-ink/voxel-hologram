@@ -23,7 +23,9 @@ class VoxelHologramMarkdownRenderer < Redcarpet::Render::HTML
 
         '<div class="voxel-hologram-code-block">' +
           '<div class="voxel-hologram-code-block__example  voxel-hologram-code-block__example--html">' +
-            render_html(code, language) +
+            '<div class="voxel-hologram-code-block__example__container">' +
+              render_html(code, language) +
+            '</div> <!-- /.voxel-hologram-code-block__example__container -->' +
           '</div> <!-- /.voxel-hologram-code-block__example -->' +
         '</div> <!-- /.voxel-hologram-code-block -->' +
 
@@ -36,7 +38,9 @@ class VoxelHologramMarkdownRenderer < Redcarpet::Render::HTML
 
         '<div class="voxel-hologram-code-block">' +
           '<div class="voxel-hologram-code-block__example  voxel-hologram-code-block__example--html">' +
-            render_html(code, language) +
+            '<div class="voxel-hologram-code-block__example__container">' +
+              render_html(code, language) +
+            '</div> <!-- /.voxel-hologram-code-block__example__container -->' +
           '</div> <!-- /.voxel-hologram-code-block__example -->' +
 
           '<div class="voxel-code-snippet  voxel-code-snippet--html  syntax">' +
