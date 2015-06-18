@@ -6,6 +6,8 @@ $voxel-hologram-code-block__example__border--width: 1px !default;
 $voxel-hologram-code-block__example__border--style: solid !default;
 $voxel-hologram-code-block__example__border--color: map-get($voxel-colors__brand--primary, "50") !default;
 
+$voxel-hologram-code-block__example__min-height: 8rem !default;
+
 $voxel-hologram-code-block__icon__width: $voxel-code-snippet__icon__width !default;
 $voxel-hologram-code-block__icon__height: $voxel-code-snippet__icon__height !default;
 $voxel-hologram-code-block__icon__top: $voxel-code-snippet__icon__top !default;
