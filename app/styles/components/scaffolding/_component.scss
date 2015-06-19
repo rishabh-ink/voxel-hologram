@@ -10,6 +10,7 @@
   background-color: $voxel-scaffolding__body__background-color;
 }
 
+// TODO Remove qualifying element, maybe?
 // scss-lint:disable QualifyingElement
 html.js.voxel-opacity {
   opacity: 0;
