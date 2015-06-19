@@ -15,14 +15,14 @@
     "url": "http://rishabhsrao.github.io"
   },
   "dependencies": {
-    "jquery": "https://github.com/jquery/jquery.git#1.10.2",
-    "requirejs": "https://github.com/jrburke/requirejs-bower.git#2.1.17",
-    "voxel": "https://github.com/rishabhsrao/voxel.git#1.4.0"
+    "jquery": "https://github.com/jquery/jquery.git#~1.10",
+    "requirejs": "https://github.com/jrburke/requirejs-bower.git#~2.1",
+    "voxel": "https://github.com/rishabhsrao/voxel.git#~2.0"
   },
   "devDependencies": {
-    "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#3.1.1",
-    "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#2.1.0",
-    "normalize-css": "https://github.com/necolas/normalize.css.git#3.0.3"
+    "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#~3.1",
+    "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#~2.1",
+    "normalize-css": "https://github.com/necolas/normalize.css.git#~3.0"
   },
   "resolutions": {
     "jquery": "1.10.2"
