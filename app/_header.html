@@ -42,10 +42,43 @@
           <a href="#" class="voxel-drawer__title">Voxel</a>
         </header>
         <div class="voxel-layouts__content">
+          <% categoryTitles = Array.new %>
+          <% @categories.each do |category| %>
+            <% categoryTitleName = category[0].split(@config['name_scope']).first %>
+            <% if not categoryTitles.include?(categoryTitleName) %>
+              <% categoryTitles.push(categoryTitleName) %>
+            <% end %>
+          <% end %>
+
           <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
-            <% @categories.each do |category, file_name| %>
+            <% if file_name.include?("index.html") %>
+              <li class="voxel-drawer__index__item  voxel-drawer__index__item--active">
+                <a class="voxel-drawer__index__item__link" href="index.html">Home</a>
+              </li>
+            <% else %>
               <li class="voxel-drawer__index__item">
-                <a href="<%= file_name %>"><%= category %></a>
+                <a class="voxel-drawer__index__item__link" href="index.html">Home</a>
+              </li>
+            <% end %>
+
+            <% categoryTitles.each do |categoryTitle| %>
+              <li class="voxel-drawer__index__item"><%= categoryTitle %>
+                <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+                  <% @categories.each do |category| %>
+                    <% if category[0].include?(wrapper) %>
+                      <% categoryName = category[0].split(@config['name_scope']).last %>
+                      <% if categoryName == title.split(@config['name_scope']).last %>
+                        <li class="voxel-drawer__index__item  voxel-drawer__index__item--active">
+                          <a class="voxel-drawer__index__item__link" href="<%= category[1] %>"><%= categoryName %></a>
+                        </li>
+                      <% else %>
+                        <li class="voxel-drawer__index__item">
+                          <a class="voxel-drawer__index__item__link" href="<%= category[1] %>"<%= categoryName %></a>
+                        </li>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+                </ol>
               </li>
             <% end %>
           </ol> <!-- /.voxel-drawer__index -->
@@ -57,7 +90,11 @@
       <header class="voxel-header">
         <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
         <div class="voxel-layouts__content">
-          <a href="#" class="voxel-header__title">Voxel</a> <span class="voxel-header__subtitle">A minimal theme.</span>
+          <% if title.split(@config['name_scope']).last %>
+            <a href="#" class="voxel-header__title"><%= title.split(@config['name_scope']).last %></a> <span class="voxel-header__subtitle"><%= @config['subtitle'] %></span>
+          <% elsif file_name.include?("index.html") %>
+            <a href="#" class="voxel-header__title">Voxel Hologram</a> <span class="voxel-header__subtitle">A Hologram theme.</span>
+          <% end %>
         </div> <!-- /.voxel-layouts__content -->
       </header> <!-- /.voxel-header -->
     </div> <!-- /.voxel-hologram__content -->
