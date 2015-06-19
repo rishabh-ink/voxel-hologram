@@ -11,13 +11,13 @@
   }
 }
 
-/*html*/#voxel.voxel-cssfilters .voxel-hologram__content {
+/*html*/#voxel.voxel-cssfilters {
   .voxel-layouts__page--inactive {
     @include voxel-layouts__page--inactive--with-filters();
   }
 }
 
-/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+/*html*/#voxel.voxel-csstransforms {
   .voxel-layouts__page {
     @include voxel-layouts__page();
   }
