@@ -31,3 +31,31 @@
     @include voxel-drawer__index__item();
   }
 }
+
+/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+  .voxel-drawer {
+    @include voxel-drawer--with-transforms();
+  }
+
+  .voxel-drawer--active {
+    @include voxel-drawer--active--with-transforms();
+  }
+}
+
+/*html*/#voxel.voxel-cssfilters .voxel-hologram__content {
+  .voxel-drawer--active ~ .voxel-layouts__page {
+    @include voxel-drawer--active_siblings--with-filters();
+  }
+}
+
+/*html*/#voxel.voxel-csstransitions .voxel-hologram__content {
+  .voxel-drawer__toggle {
+    @include voxel-drawer__toggle--with-transitions();
+  }
+}
+
+/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+  .voxel-drawer__toggle--active {
+    @include voxel-drawer__toggle--active--with-transforms();
+  }
+}

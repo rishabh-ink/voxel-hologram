@@ -10,3 +10,9 @@
     @include voxel-layouts__image();
   }
 }
+
+/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+  .voxel-layouts__page {
+    @include voxel-layouts__page();
+  }
+}
