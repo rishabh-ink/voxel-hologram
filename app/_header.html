@@ -65,7 +65,7 @@
               <li class="voxel-drawer__index__item"><%= categoryTitle %>
                 <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
                   <% @categories.each do |category| %>
-                    <% if category[0].include?(wrapper) %>
+                    <% if category[0].include?(categoryTitle) %>
                       <% categoryName = category[0].split(@config['name_scope']).last %>
                       <% if categoryName == title.split(@config['name_scope']).last %>
                         <li class="voxel-drawer__index__item  voxel-drawer__index__item--active">
