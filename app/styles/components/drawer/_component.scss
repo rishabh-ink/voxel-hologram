@@ -42,12 +42,6 @@
   }
 }
 
-/*html*/#voxel.voxel-cssfilters .voxel-hologram__content {
-  .voxel-drawer--active ~ .voxel-layouts__page {
-    @include voxel-drawer--active_siblings--with-filters();
-  }
-}
-
 /*html*/#voxel.voxel-csstransitions .voxel-hologram__content {
   .voxel-drawer__toggle {
     @include voxel-drawer__toggle--with-transitions();
