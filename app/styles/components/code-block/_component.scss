@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-#voxel {
+/*html*/#voxel {
   .voxel-hologram-code-block__example {
     @include voxel-hologram-code-block__example();
   }

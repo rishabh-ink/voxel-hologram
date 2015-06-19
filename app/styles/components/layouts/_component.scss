@@ -1,4 +1,4 @@
-#voxel {
+/*html*/#voxel {
   // We cannot use the selector `#voxel .voxel-hologram__content .voxel-layouts__content`...
   .voxel-layouts__content {
     @include voxel-layouts__content();

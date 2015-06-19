@@ -1,12 +1,12 @@
-#voxel .voxel-hologram__content *,
-#voxel .voxel-hologram__content *:before,
-#voxel .voxel-hologram__content *:after {
+/*html*/#voxel .voxel-hologram__content *,
+/*html*/#voxel .voxel-hologram__content *:before,
+/*html*/#voxel .voxel-hologram__content *:after {
   @include box-sizing($voxel-scaffolding__box-sizing);
 }
 
 // Do not style `body` because we do not want to touch the user's styles.
 // Instead style everything inside `.voxel-hologram__content` only. That's ours.
-#voxel .voxel-hologram__content {
+/*html*/#voxel .voxel-hologram__content {
   background-color: $voxel-scaffolding__body__background-color;
 }
 
@@ -28,7 +28,7 @@ html.js.voxel-opacity.wf-active {
 // scss-lint:enable QualifyingElement
 
 // scss-lint:disable MergeableSelector
-#voxel .voxel-hologram__content hr {
+/*html*/#voxel .voxel-hologram__content hr {
   @include voxel-scaffolding__hr();
 }
 // scss-lint:enable MergeableSelector
