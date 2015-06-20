@@ -11,10 +11,14 @@
   }
 }
 
-/*html*/#voxel.voxel-cssfilters .voxel-layouts__page--inactive {
-  @include voxel-layouts__page--inactive--with-filters();
+/*html*/#voxel.voxel-cssfilters {
+  .voxel-layouts__page--inactive {
+    @include voxel-layouts__page--inactive--with-filters();
+  }
 }
 
-/*html*/#voxel.voxel-csstransitions .voxel-layouts__page {
-  @include voxel-layouts__page--with-transitions();
+/*html*/#voxel.voxel-csstransitions {
+  .voxel-layouts__page {
+    @include voxel-layouts__page--with-transitions();
+  }
 }

@@ -1,0 +1,19 @@
+/*html*/#voxel .voxel-hologram__content {
+  .voxel-pills {
+    @include voxel-pills();
+  }
+
+  .voxel-pills__item {
+    @include voxel-pills__item();
+  }
+
+  /*a*/.voxel-pill {
+    @include voxel-pill();
+  }
+}
+
+/*html*/#voxel.voxel-csstransitions .voxel-hologram__content {
+  .voxel-pill {
+    @include voxel-pill--with-transitions();
+  }
+}
