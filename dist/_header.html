@@ -43,7 +43,7 @@
     <div class="voxel-hologram__content">
       <aside data-js="voxelDrawer" class="voxel-drawer">
         <header class="voxel-drawer__header">
-          <a href="#" class="voxel-drawer__title">Voxel</a>
+          <a href="index.html" class="voxel-drawer__title"><%= @config['title'] %></a>
         </header>
         <div class="voxel-layouts__content">
           <% categoryTitles = Array.new %>
@@ -96,9 +96,9 @@
         <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
         <div class="voxel-layouts__content">
           <% if title.split(@config['name_scope']).last %>
-            <a href="#" class="voxel-header__title"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
+            <a href="index.html" class="voxel-header__title" data-js="voxelDrawerHeaderTitle"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% elsif file_name.include?("index.html") %>
-            <a href="#" class="voxel-header__title">Voxel Hologram <span class="voxel-header__subtitle">A Hologram theme.</span></a>
+            <a href="index.html" class="voxel-header__title" data-js="voxelDrawerHeaderTitle"><%= @config['title'] %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% end %>
         </div> <!-- /.voxel-layouts__content -->
       </header> <!-- /.voxel-header -->
@@ -107,9 +107,13 @@
     <div class="voxel-layouts__page" data-js="voxelDrawerPage">
       <div class="voxel-layouts__content">
         <div class="voxel-hologram__content">
-          <% @blocks.each do |block| %>
-            <a href="#<%= block[:name] %>"><%= block[:title] %></a>
-          <% end %>
+          <ul class="voxel-pills">
+            <% @blocks.each do |block| %>
+              <li class="voxel-pills__item">
+                <a href="#<%= block[:name] %>" class="voxel-pill"><%= block[:title] %></a>
+              </li>
+            <% end %>
+          </ul> <!-- /.voxel-pills -->
         </div> <!-- /.voxel-hologram__content -->
 
         <div class="voxel-hologram__content">
