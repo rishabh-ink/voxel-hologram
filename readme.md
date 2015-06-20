@@ -76,7 +76,7 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
   namescope: ' - '
   ```
 
-3. In your RequireJS configuration, you need to register the `voxel` and `voxel-hologram` modules: [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/main.js#L5-L6)
+3. In your RequireJS configuration, register the `voxel` and `voxel-hologram` modules: [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/main.js#L5-L6)
 
   ```
   // your_require_config.js
@@ -86,7 +86,7 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
   // ...
   ```
 
-4. In your main RequireJS module, you need to initialize the `voxel-hologram` module: [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/voxel-hologram-example.js#L52)
+4. In your main RequireJS module, initialize the `voxel-hologram` module: [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/voxel-hologram-example.js#L52)
 
   ```
   // your_main_require_module.js
