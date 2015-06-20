@@ -17,15 +17,20 @@ See the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-e
 
 ## :snowboarder: Usage
 
-A prerequisite to using Voxel Hologram is that RequireJS should be used for all your style-guide components.
+Voxel Hologram has the following prerequisites:
 
-1. Install Voxel Hologram by running:
+* RequireJS should be used for all your style-guide components.
+* jQuery v~1.10 should be present as a RequireJS module.
+
+To use Voxel Hologram, follow these steps below. Follow the :blub: link to refer the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
+
+1. Install Voxel Hologram by running: [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/bower.json#L20)
 
   ```
   bower install --save-dev voxel-hologram
   ```
 
-2. Modify your Hologram configuration file by adding the following properties:
+2. Modify your Hologram configuration file by adding the following properties: [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/.hologramrc)
 
   ```
   # The title is displayed in the header and in the sidebar drawer.
@@ -71,7 +76,29 @@ A prerequisite to using Voxel Hologram is that RequireJS should be used for all 
   namescope: ' - '
   ```
 
-3. Run Hologram as usual, pointing to your modified Hologram configuration file.
+3. In your RequireJS configuration, you need to register the `voxel` and `voxel-hologram` modules: [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/main.js#L5-L6)
+
+  ```
+  // your_require_config.js
+  // ...
+  "voxel": "<Path to your bower_components directory>/voxel/dist/scripts/voxel",
+  "voxel-hologram": "<Path to your bower_components directory>/voxel-hologram/dist/scripts/voxel-hologram"
+  // ...
+  ```
+
+4. In your main RequireJS module, you need to initialize the `voxel-hologram` module: [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/voxel-hologram-example.js#L52)
+
+  ```
+  // your_main_require_module.js
+  require([..., "voxel-hologram", ...],
+  function(...,  VoxelHologram, ...) {
+    // ...
+    VoxelHologram.create();
+    // ...
+  });
+  ```
+
+5. Run Hologram as usual, pointing to your modified Hologram configuration file. [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/tasks/style-doc.js#L15-L19)
 
 For further reference, see the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
 
