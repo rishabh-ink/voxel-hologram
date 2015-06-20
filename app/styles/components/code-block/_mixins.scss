@@ -1,9 +1,12 @@
 @mixin voxel-hologram-code-block__example() {
-  padding: $voxel-hologram-code-block__example__padding;
-  border-width: $voxel-hologram-code-block__example__border--width;
-  border-style: $voxel-hologram-code-block__example__border--style;
   border-color: $voxel-hologram-code-block__example__border--color;
-  min-height: $voxel-hologram-code-block__example__min-height;
+  border-style: $voxel-hologram-code-block__example__border--style;
+  border-width: $voxel-hologram-code-block__example__border--width;
+  min-height: rem-calc($voxel-hologram-code-block__example__min-height);
+  padding-bottom: rem-calc($voxel-hologram-code-block__example__padding--bottom);
+  padding-left: rem-calc($voxel-hologram-code-block__example__padding--left);
+  padding-right: rem-calc($voxel-hologram-code-block__example__padding--right);
+  padding-top: rem-calc($voxel-hologram-code-block__example__padding--top);
   position: relative;
 
   &:before {
@@ -20,4 +23,6 @@
 
 @mixin voxel-hologram-code-block__example__container() {
   overflow: auto;
+  padding-bottom: rem-calc($voxel-hologram-code-block__example__container__padding--bottom);
+  padding-top: rem-calc($voxel-hologram-code-block__example__container__padding--top);
 }

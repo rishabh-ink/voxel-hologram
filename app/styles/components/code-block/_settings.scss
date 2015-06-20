@@ -1,6 +1,9 @@
 $voxel-hologram-code-block__include-classes: $voxel-components__include-classes !default;
 
-$voxel-hologram-code-block__example__padding: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-hologram-code-block__example__padding--top: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
+$voxel-hologram-code-block__example__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-hologram-code-block__example__padding--bottom: map-get($voxel-scaffolding__spacing--horizontal, "a100") !default;
+$voxel-hologram-code-block__example__padding--left: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
 
 $voxel-hologram-code-block__example__border--width: 1px !default;
 $voxel-hologram-code-block__example__border--style: solid !default;
@@ -14,3 +17,6 @@ $voxel-hologram-code-block__icon__top: $voxel-code-snippet__icon__top !default;
 $voxel-hologram-code-block__icon__right: $voxel-code-snippet__icon__right !default;
 
 $voxel-hologram-code-snippet__icon__background-image--html: url("../images/html.png") !default;
+
+$voxel-hologram-code-block__example__container__padding--top: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-hologram-code-block__example__container__padding--bottom: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
