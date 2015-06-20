@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Voxel Hologram -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Carrois+Gothic">
   <link rel="stylesheet" href="styles/main.css">
   <!-- /Voxel Hologram -->
 
@@ -21,6 +22,9 @@
   <!-- User stylesheets -->
 
   <script src="<%= @config['bower_components_dir'] %>/voxel/dist/scripts/libraries/modernizr.custom.js"></script>
+
+  <!-- Ensure Voxel Hologram gets initialized in user's main script. -->
+  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
 
   <!--
             ___
@@ -62,7 +66,8 @@
             <% end %>
 
             <% categoryTitles.each do |categoryTitle| %>
-              <li class="voxel-drawer__index__item"><%= categoryTitle %>
+              <li class="voxel-drawer__index__item">
+                <p class="voxel-drawer__index__item__text"><%= categoryTitle %></p>
                 <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
                   <% @categories.each do |category| %>
                     <% if category[0].include?(categoryTitle) %>
@@ -91,9 +96,9 @@
         <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
         <div class="voxel-layouts__content">
           <% if title.split(@config['name_scope']).last %>
-            <a href="#" class="voxel-header__title"><%= title.split(@config['name_scope']).last %></a> <span class="voxel-header__subtitle"><%= @config['subtitle'] %></span>
+            <a href="#" class="voxel-header__title"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% elsif file_name.include?("index.html") %>
-            <a href="#" class="voxel-header__title">Voxel Hologram</a> <span class="voxel-header__subtitle">A Hologram theme.</span>
+            <a href="#" class="voxel-header__title">Voxel Hologram <span class="voxel-header__subtitle">A Hologram theme.</span></a>
           <% end %>
         </div> <!-- /.voxel-layouts__content -->
       </header> <!-- /.voxel-header -->
