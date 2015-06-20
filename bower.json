@@ -24,6 +24,9 @@
     "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#~2.1",
     "normalize-css": "https://github.com/necolas/normalize.css.git#~3.0"
   },
+  "resolutions": {
+    "jquery": "~1.10"
+  },
   "ignore": [
     ".*",
     "Gemfile",
