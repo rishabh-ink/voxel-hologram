@@ -27,36 +27,36 @@ A prerequisite to using Voxel Hologram is that RequireJS should be used for all 
 
 2. Modify your Hologram configuration file by adding the following properties:
 
-```
-# The title is displayed in the header and in the sidebar drawer.
-title: '<Your title>'
+  ```
+  # The title is displayed in the header and in the sidebar drawer.
+  title: '<Your title>'
 
-# The subtitle is displayed next to the title in the header.
-subtitle: '<Your subtitle>'
+  # The subtitle is displayed next to the title in the header.
+  subtitle: '<Your subtitle>'
 
-# This directory contains the _header and _footer templates.
-documentation_assets: '<Path to your bower_components directory>/voxel-hologram/dist'
+  # This directory contains the _header and _footer templates.
+  documentation_assets: '<Path to your bower_components directory>/voxel-hologram/dist'
 
-# This directory contains the templates required to generate the different types of code examples viz. html_example, js_example, table_example, jsx_example.
-code_example_templates: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_examples'
+  # This directory contains the templates required to generate the different types of code examples viz. html_example, js_example, table_example, jsx_example.
+  code_example_templates: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_examples'
 
-# This file renders the code example and prints the code.
-custom_markdown: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/voxel_hologram_markdown_renderer.rb'
+  # This file renders the code example and prints the code.
+  custom_markdown: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/voxel_hologram_markdown_renderer.rb'
 
-# These directories contain additional images and fonts required by the Voxel theme.
-dependencies:
-  - '<Path to your bower_components directory>/voxel/dist/images'
-  - '<Path to your bower_components directory>/voxel/dist/fonts'
+  # These directories contain additional images and fonts required by the Voxel theme.
+  dependencies:
+    - '<Path to your bower_components directory>/voxel/dist/images'
+    - '<Path to your bower_components directory>/voxel/dist/fonts'
 
-# This directory path is used by Voxel Hologram to load its custom version of Modernizr.
-bower_components_dir: '<Path to your bower_components directory>'
+  # This directory path is used by Voxel Hologram to load its custom version of Modernizr.
+  bower_components_dir: '<Path to your bower_components directory>'
 
-# This file path is your main RequireJS configuration file which is loaded in the style guide via the data-main attribute.
-requirejs_main: '<Path to your main RequireJS configuration file>'
+  # This file path is your main RequireJS configuration file which is loaded in the style guide via the data-main attribute.
+  requirejs_main: '<Path to your main RequireJS configuration file>'
 
-# This string is used to split the category name and the sub-category name.
-namescope: ' - '
-```
+  # This string is used to split the category name and the sub-category name.
+  namescope: ' - '
+  ```
 
 3. Run Hologram as usual, pointing to your modified Hologram configuration file.
 
