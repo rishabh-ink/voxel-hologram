@@ -33,6 +33,14 @@
 
   .voxel-drawer__index__item__link {
     @include voxel-drawer__index__item__link();
+
+    &:hover {
+      @include voxel-drawer__index__item--hover();
+    }
+  }
+
+  .voxel-drawer__index__item__text {
+    @include voxel-drawer__index__item__text();
   }
 
   .voxel-drawer__index__item--active {
@@ -60,4 +68,12 @@
   .voxel-drawer__toggle--active {
     @include voxel-drawer__toggle--active--with-transforms();
   }
+}
+
+/*html*/#voxel.voxel-csstransitions .voxel-header__title {
+  @include voxel-header__title--with-transitions();
+}
+
+/*html*/#voxel.voxel-cssfilters .voxel-header__title--inactive {
+  @include voxel-header__title--inactive--with-filters();
 }

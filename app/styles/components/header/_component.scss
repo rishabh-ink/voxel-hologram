@@ -7,7 +7,7 @@
     @include voxel-header__title();
   }
 
-  .voxel-header__subtitle {
-    @include voxel-header__subtitle();
+  .voxel-header__title__sub {
+    @include voxel-header__title__sub();
   }
 }
