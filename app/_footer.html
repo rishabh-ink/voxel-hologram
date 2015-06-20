@@ -8,17 +8,6 @@
     </div> <!-- /.voxel-layouts__page -->
   </main> <!-- /#voxel -->
 
-  <script src="<%= @config['bower_components_dir'] %>/webfontloader/webfontloader.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: [
-          "Carrois+Gothic::latin"
-        ]
-      }
-    });
-  </script>
-
   <!-- User scripts. -->
   <% @config['js_include'].each do |js| %>
     <script type="text/javascript" src="<%= js %>"></script>

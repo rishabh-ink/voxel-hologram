@@ -10,24 +10,6 @@
   background-color: $voxel-scaffolding__body__background-color;
 }
 
-// TODO Remove qualifying element, maybe?
-// scss-lint:disable QualifyingElement
-html.js.voxel-opacity {
-  opacity: 0;
-}
-
-html.voxel-csstransitions.wf-inactive,
-html.voxel-csstransitions.wf-active {
-  @include transition-duration(.5s);
-  @include transition-property(opacity);
-}
-
-html.js.voxel-opacity.wf-inactive,
-html.js.voxel-opacity.wf-active {
-  opacity: 1;
-}
-// scss-lint:enable QualifyingElement
-
 // scss-lint:disable MergeableSelector
 /*html*/#voxel .voxel-hologram__content hr {
   @include voxel-scaffolding__hr();
