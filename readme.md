@@ -60,6 +60,8 @@ A prerequisite to using Voxel Hologram is that RequireJS should be used for all 
 
 3. Run Hologram as usual, pointing to your modified Hologram configuration file.
 
+For further reference, see the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
+
 
 ## :rowboat: Get started
 
