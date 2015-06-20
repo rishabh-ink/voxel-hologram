@@ -1,4 +1,4 @@
-# voxel-hologram [:star:](http://voxel-hologram-rsr.herokuapp.com/dist)
+# voxel-hologram [:star:](http://voxel-hologram-example-rsr.herokuapp.com/dist/docs)
 
 > A minimal Hologram theme based on Voxel.
 
@@ -12,7 +12,7 @@
 
 ## :star: Live demo
 
-See the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project for a [live demo](http://voxel-hologram-example-rsr.herokuapp.com/dist/docs/index.html).
+See the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project for a [live demo](http://voxel-hologram-example-rsr.herokuapp.com/dist/docs).
 
 
 ## :snowboarder: Usage
