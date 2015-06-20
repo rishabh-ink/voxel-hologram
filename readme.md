@@ -22,7 +22,7 @@ Voxel Hologram has the following prerequisites:
 * RequireJS should be used for all your style-guide components.
 * jQuery v~1.10 should be present as a RequireJS module.
 
-To use Voxel Hologram, follow these steps below. Follow the :blub: link to refer the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
+To use Voxel Hologram, follow these steps below. Follow the :bulb: link to refer the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
 
 1. Install Voxel Hologram by running: [:bulb:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/bower.json#L20)
 
