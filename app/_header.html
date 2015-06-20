@@ -96,9 +96,9 @@
         <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
         <div class="voxel-layouts__content">
           <% if title.split(@config['name_scope']).last %>
-            <a href="#" class="voxel-header__title"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
+            <a href="#" class="voxel-header__title" data-js="voxelDrawerHeaderTitle"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% elsif file_name.include?("index.html") %>
-            <a href="#" class="voxel-header__title">Voxel Hologram <span class="voxel-header__title__sub">A Hologram theme.</span></a>
+            <a href="#" class="voxel-header__title" data-js="voxelDrawerHeaderTitle">Voxel Hologram <span class="voxel-header__title__sub">A Hologram theme.</span></a>
           <% end %>
         </div> <!-- /.voxel-layouts__content -->
       </header> <!-- /.voxel-header -->
