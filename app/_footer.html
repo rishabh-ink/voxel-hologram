@@ -19,9 +19,6 @@
     });
   </script>
 
-  <!-- Ensure Voxel Hologram gets initialized in user's main script. -->
-  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
-
   <!-- User scripts. -->
   <% @config['js_include'].each do |js| %>
     <script type="text/javascript" src="<%= js %>"></script>

@@ -22,6 +22,9 @@
 
   <script src="<%= @config['bower_components_dir'] %>/voxel/dist/scripts/libraries/modernizr.custom.js"></script>
 
+  <!-- Ensure Voxel Hologram gets initialized in user's main script. -->
+  <script src="<%= @config['bower_components_dir'] %>/requirejs/require.js" data-main="<%= @config['requirejs_main'] %>"></script>
+
   <!--
             ___
            / '_)   Voxel Hologram.
