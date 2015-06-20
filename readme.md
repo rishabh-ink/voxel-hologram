@@ -48,6 +48,19 @@ A prerequisite to using Voxel Hologram is that RequireJS should be used for all 
     - '<Path to your bower_components directory>/voxel/dist/images'
     - '<Path to your bower_components directory>/voxel/dist/fonts'
 
+  # This is a list of your CSS files that you'd like to include as a link tag at the top of the page.
+  # This will usually be your main CSS file that you want to document.
+  css_include:
+    - '<Path to the file that you'd like to include as a link tag>'
+    - '<Another one>'
+    - '<And so on...>'
+
+  # This is a list of your JS files that you'd like to include as a script tag at the bottom of the page.
+  js_include:
+    - '<Path to the file that you'd like to include as a script tag>'
+    - '<Another one>'
+    - '<And so on...>'
+
   # This directory path is used by Voxel Hologram to load its custom version of Modernizr.
   bower_components_dir: '<Path to your bower_components directory>'
 
