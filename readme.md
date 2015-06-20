@@ -141,3 +141,5 @@ bundle clean --force && bundle install
 ## :scroll: License
 
 See [license.md](license.md).
+
+The file, [voxel_hologram_markdown_renderer.rb](app/_templates/voxel_hologram_markdown_renderer.rb), was borrowed from the [Cortana](https://github.com/Yago/Cortana) project.
