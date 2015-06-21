@@ -33,35 +33,35 @@
     }
 
     h2 {
-      @include voxel__fonts__headings--h2();
+      @include voxel-fonts__headings--h2();
     }
 
     h3 {
-      @include voxel__fonts__headings--h3();
+      @include voxel-fonts__headings--h3();
     }
 
     h4 {
-      @include voxel__fonts__headings--h4();
+      @include voxel-fonts__headings--h4();
     }
 
     h5 {
-      @include voxel__fonts__headings--h5();
+      @include voxel-fonts__headings--h5();
     }
 
     h6 {
-      @include voxel__fonts__headings--h6();
+      @include voxel-fonts__headings--h6();
     }
 
     small {
-      @include voxel__fonts__small();
+      @include voxel-fonts__small();
     }
 
     a {
-      @include voxel__fonts__a();
+      @include voxel-fonts__a();
     }
 
     code {
-      @include voxel__fonts__code();
+      @include voxel-fonts__code();
     }
 
     pre code {
@@ -71,5 +71,34 @@
     blockquote {
       @include voxel-fonts__blockquote();
     }
+  }
+}
+
+@each $theme in $voxel-colors__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h1,
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h2,
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h3,
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h4,
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h5,
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h6 {
+    @include voxel-fonts__headings--h123456__themes($theme);
+  }
+}
+
+@each $theme in $voxel-colors__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content a {
+    @include voxel-fonts__a__themes($theme);
+  }
+}
+
+@each $theme in $voxel-colors__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content code {
+    @include voxel-fonts__code__themes($theme);
+  }
+}
+
+@each $theme in $voxel-colors__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content blockquote {
+    @include voxel-fonts__blockquote__themes($theme);
   }
 }

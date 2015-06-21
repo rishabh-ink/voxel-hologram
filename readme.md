@@ -74,6 +74,10 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
 
   # This string is used to split the category name and the sub-category name.
   namescope: ' - '
+
+  # This string is used to set the color theme for Voxel.
+  # Available themes: 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange', 'brown', 'gray', 'blue-gray'
+  voxel_theme: 'gray'
   ```
 
 3. In your RequireJS configuration, register the `voxel` and `voxel-hologram` modules: [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/app/scripts/main.js#L5-L6)

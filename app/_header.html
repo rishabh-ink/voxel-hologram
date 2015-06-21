@@ -33,7 +33,7 @@
 <__.|_|-|_|
   -->
 </head>
-<body>
+<body class="voxel-theme--<%= @config['voxel_theme'] %>">
   <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -55,8 +55,8 @@
 
           <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
             <% if file_name.include?("index.html") %>
-              <li class="voxel-drawer__index__item  voxel-drawer__index__item--active">
-                <a class="voxel-drawer__index__item__link" href="index.html">Home</a>
+              <li class="voxel-drawer__index__item">
+                <a class="voxel-drawer__index__item__link  voxel-drawer__index__item__link--active" href="index.html">Home</a>
               </li>
             <% else %>
               <li class="voxel-drawer__index__item">
@@ -72,8 +72,8 @@
                     <% if category[0].include?(categoryTitle) %>
                       <% categoryName = category[0].split(@config['name_scope']).last %>
                       <% if categoryName == title.split(@config['name_scope']).last %>
-                        <li class="voxel-drawer__index__item  voxel-drawer__index__item--active">
-                          <a class="voxel-drawer__index__item__link" href="<%= category[1] %>"><%= categoryName %></a>
+                        <li class="voxel-drawer__index__item">
+                          <a class="voxel-drawer__index__item__link  voxel-drawer__index__item__link--active" href="<%= category[1] %>"><%= categoryName %></a>
                         </li>
                       <% else %>
                         <li class="voxel-drawer__index__item">
