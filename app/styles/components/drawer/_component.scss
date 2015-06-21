@@ -33,18 +33,14 @@
 
   .voxel-drawer__index__item__link {
     @include voxel-drawer__index__item__link();
-
-    &:hover {
-      @include voxel-drawer__index__item--hover();
-    }
   }
 
   .voxel-drawer__index__item__text {
     @include voxel-drawer__index__item__text();
   }
 
-  .voxel-drawer__index__item--active {
-    @include voxel-drawer__index__item--active();
+  .voxel-drawer__index__item__link--active {
+    @include voxel-drawer__index__item__link--active();
   }
 }
 
