@@ -25,4 +25,5 @@
   overflow: auto;
   padding-bottom: rem-calc($voxel-hologram-code-block__example__container__padding--bottom);
   padding-top: rem-calc($voxel-hologram-code-block__example__container__padding--top);
+  resize: both;
 }
