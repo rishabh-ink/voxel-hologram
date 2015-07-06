@@ -1,0 +1,24 @@
+/*html*/#voxel {
+  // We cannot use the selector `#voxel .voxel-hologram__content .voxel-layout__content`...
+  .voxel-layout__content {
+    @include voxel-layout__content();
+  }
+
+  // ... or `.voxel-layout__content .voxel-layout__image` because other components
+  // use it to style elements inside them and that conflicts with the user's styles.
+  .voxel-layout__image {
+    @include voxel-layout__image();
+  }
+}
+
+/*html*/#voxel.voxel-cssfilters {
+  .voxel-layout__page--inactive {
+    @include voxel-layout__page--inactive--with-filters();
+  }
+}
+
+/*html*/#voxel.voxel-csstransitions {
+  .voxel-layout__page {
+    @include voxel-layout__page--with-transitions();
+  }
+}

@@ -34,7 +34,7 @@
   -->
 </head>
 <body class="voxel-theme--<%= @config['voxel_theme'] %>">
-  <!--[if lt IE 10]>
+  <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
@@ -44,7 +44,7 @@
         <header class="voxel-drawer__header">
           <a href="index.html" class="voxel-drawer__title"><%= @config['title'] %></a>
         </header>
-        <div class="voxel-layouts__content">
+        <div class="voxel-layout__content">
           <% categoryTitles = Array.new %>
           <% @categories.each do |category| %>
             <% categoryTitleName = category[0].split(@config['name_scope']).first %>
@@ -86,25 +86,25 @@
               </li>
             <% end %>
           </ol> <!-- /.voxel-drawer__index -->
-        </div> <!-- /.voxel-layouts__content -->
+        </div> <!-- /.voxel-layout__content -->
       </aside> <!-- /.voxel-drawer -->
     </div> <!-- /.voxel-hologram__content -->
 
     <div class="voxel-hologram__content">
       <header class="voxel-header">
         <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
-        <div class="voxel-layouts__content">
+        <div class="voxel-layout__content">
           <% if title.split(@config['name_scope']).last %>
             <a href="index.html" class="voxel-header__title" data-js="voxelDrawerHeaderTitle"><%= title.split(@config['name_scope']).last %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% elsif file_name.include?("index.html") %>
             <a href="index.html" class="voxel-header__title" data-js="voxelDrawerHeaderTitle"><%= @config['title'] %> <span class="voxel-header__title__sub"><%= @config['subtitle'] %></span></a>
           <% end %>
-        </div> <!-- /.voxel-layouts__content -->
+        </div> <!-- /.voxel-layout__content -->
       </header> <!-- /.voxel-header -->
     </div> <!-- /.voxel-hologram__content -->
 
-    <div class="voxel-layouts__page" data-js="voxelDrawerPage">
-      <div class="voxel-layouts__content">
+    <div class="voxel-layout__page" data-js="voxelDrawerPage">
+      <div class="voxel-layout__content">
         <div class="voxel-hologram__content">
           <ul class="voxel-pills">
             <% @blocks.each do |block| %>

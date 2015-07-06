@@ -1,15 +1,15 @@
 // Set a root font size as Voxel uses `rem`s for measurements.
 /*html*/#voxel {
-  font-size: $voxel-fonts__font-size--base;
+  font-size: $voxel-font__font-size--base;
 
   // Do not style `body` because we do not want to touch the user's styles.
   // Instead style everything inside `.voxel-hologram__content` only. That's ours.
 
   .voxel-hologram__content {
-    @include voxel-fonts__body();
+    @include voxel-font__body();
 
     p {
-      @include voxel-fonts__paragraph();
+      @include voxel-font__paragraph();
     }
 
     h1,
@@ -18,87 +18,87 @@
     h4,
     h5,
     h6 {
-      @include voxel-fonts__headings--h123456();
+      @include voxel-font__headings--h123456();
     }
 
     h1,
     h2,
     h3,
     h4 {
-      @include voxel-fonts__headings--h1234();
+      @include voxel-font__headings--h1234();
     }
 
     h1 {
-      @include voxel-fonts__headings--h1();
+      @include voxel-font__headings--h1();
     }
 
     h2 {
-      @include voxel-fonts__headings--h2();
+      @include voxel-font__headings--h2();
     }
 
     h3 {
-      @include voxel-fonts__headings--h3();
+      @include voxel-font__headings--h3();
     }
 
     h4 {
-      @include voxel-fonts__headings--h4();
+      @include voxel-font__headings--h4();
     }
 
     h5 {
-      @include voxel-fonts__headings--h5();
+      @include voxel-font__headings--h5();
     }
 
     h6 {
-      @include voxel-fonts__headings--h6();
+      @include voxel-font__headings--h6();
     }
 
     small {
-      @include voxel-fonts__small();
+      @include voxel-font__small();
     }
 
     a {
-      @include voxel-fonts__a();
+      @include voxel-font__a();
     }
 
     code {
-      @include voxel-fonts__code();
+      @include voxel-font__code();
     }
 
     pre code {
-      @include voxel-fonts__pre__code();
+      @include voxel-font__pre__code();
     }
 
     blockquote {
-      @include voxel-fonts__blockquote();
+      @include voxel-font__blockquote();
     }
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h1,
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h2,
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h3,
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h4,
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h5,
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content h6 {
-    @include voxel-fonts__headings--h123456__themes($theme);
+    @include voxel-font__headings--h123456__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content a {
-    @include voxel-fonts__a__themes($theme);
+    @include voxel-font__a__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content code {
-    @include voxel-fonts__code__themes($theme);
+    @include voxel-font__code__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content blockquote {
-    @include voxel-fonts__blockquote__themes($theme);
+    @include voxel-font__blockquote__themes($theme);
   }
 }

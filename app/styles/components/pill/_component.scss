@@ -18,7 +18,7 @@
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content /*a*/.voxel-pill {
     @include voxel-pill__themes($theme);
   }

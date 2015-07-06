@@ -55,6 +55,12 @@
 }
 
 /*html*/#voxel.voxel-csstransitions .voxel-hologram__content {
+  .voxel-drawer {
+    @include voxel-drawer--with-transitions();
+  }
+}
+
+/*html*/#voxel.voxel-csstransitions .voxel-hologram__content {
   .voxel-drawer__toggle {
     @include voxel-drawer__toggle--with-transitions();
   }
@@ -66,6 +72,12 @@
   }
 }
 
+/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+  .voxel-drawer__header {
+    @include voxel-drawer__header--with-transforms();
+  }
+}
+
 /*html*/#voxel.voxel-csstransitions .voxel-header__title {
   @include voxel-header__title--with-transitions();
 }
@@ -74,43 +86,43 @@
   @include voxel-header__title--inactive--with-filters();
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer {
     @include voxel-drawer__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__toggle {
     @include voxel-drawer__toggle__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__toggle--active {
     @include voxel-drawer__toggle--active__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__title {
     @include voxel-drawer__title__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__header {
     @include voxel-drawer__header__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__index__item__link {
     @include voxel-drawer__index__item__link__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__index__item__link--active {
     @include voxel-drawer__index__item__link--active__themes($theme);
   }

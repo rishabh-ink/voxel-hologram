@@ -12,19 +12,25 @@
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+/*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
+  .voxel-header {
+    @include voxel-header--with-transforms();
+  }
+}
+
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-header {
     @include voxel-header__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-header__title {
     @include voxel-header__title__themes($theme);
   }
 }
 
-@each $theme in $voxel-colors__themes--supported {
+@each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-header__title__sub {
     @include voxel-header__title__sub__themes($theme);
   }
