@@ -12,10 +12,10 @@ gulp.task("image:minify", function () {
   return gulp.src([
       path.join(CFG.DIR.src, CFG.DIR.image, "**/*")
     ])
-    .pipe($.cache($.imagemin({
+    .pipe($.imagemin({
       progressive: true,
       interlaced: true
-    })))
+    }))
     .pipe(gulp.dest(path.join(CFG.DIR.dist, CFG.DIR.image)))
     .pipe($.size({
       title: "images"
