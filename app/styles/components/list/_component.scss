@@ -1,0 +1,41 @@
+/*html*/#voxel .voxel-hologram__content {
+  .voxel-list {
+    @include voxel-list();
+  }
+
+  .voxel-list--ordered {
+    @include voxel-list--ordered();
+  }
+
+  .voxel-list__item {
+    @include voxel-list__item();
+  }
+
+  .voxel-list--ordered .voxel-list__item {
+    @include voxel-list--ordered__item();
+  }
+
+  .voxel-list__item__link {
+    @include voxel-list__item__link();
+  }
+
+  .voxel-list__item__text {
+    @include voxel-list__item__text();
+  }
+
+  .voxel-list__item__link--active {
+    @include voxel-list__item__link--active();
+  }
+}
+
+@each $theme in $voxel-color__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-list__item__link {
+    @include voxel-list__item__link__themes($theme);
+  }
+}
+
+@each $theme in $voxel-color__themes--supported {
+  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-list__item__link--active {
+    @include voxel-list__item__link--active__themes($theme);
+  }
+}

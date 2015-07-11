@@ -22,26 +22,6 @@
   .voxel-drawer__header {
     @include voxel-drawer__header();
   }
-
-  .voxel-drawer__index {
-    @include voxel-drawer__index();
-  }
-
-  .voxel-drawer__index__item {
-    @include voxel-drawer__index__item();
-  }
-
-  .voxel-drawer__index__item__link {
-    @include voxel-drawer__index__item__link();
-  }
-
-  .voxel-drawer__index__item__text {
-    @include voxel-drawer__index__item__text();
-  }
-
-  .voxel-drawer__index__item__link--active {
-    @include voxel-drawer__index__item__link--active();
-  }
 }
 
 /*html*/#voxel.voxel-csstransforms .voxel-hologram__content {
@@ -113,17 +93,5 @@
 @each $theme in $voxel-color__themes--supported {
   /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__header {
     @include voxel-drawer__header__themes($theme);
-  }
-}
-
-@each $theme in $voxel-color__themes--supported {
-  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__index__item__link {
-    @include voxel-drawer__index__item__link__themes($theme);
-  }
-}
-
-@each $theme in $voxel-color__themes--supported {
-  /*html*/#voxel .voxel-theme--#{$theme} .voxel-hologram__content .voxel-drawer__index__item__link--active {
-    @include voxel-drawer__index__item__link--active__themes($theme);
   }
 }
