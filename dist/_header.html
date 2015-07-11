@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="voxel" class="no-js" lang="en">
+<html id="voxel" class="voxel-no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <title><%= @config['title'] %> &mdash; <%= @config['subtitle'] %></title>
@@ -53,31 +53,31 @@
             <% end %>
           <% end %>
 
-          <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+          <ol class="voxel-list  voxel-list--ordered">
             <% if file_name.include?("index.html") %>
-              <li class="voxel-drawer__index__item">
-                <a class="voxel-drawer__index__item__link  voxel-drawer__index__item__link--active" href="index.html">Home</a>
+              <li class="voxel-list__item">
+                <a class="voxel-list__item__link  voxel-list__item__link--active" href="index.html">Home</a>
               </li>
             <% else %>
-              <li class="voxel-drawer__index__item">
-                <a class="voxel-drawer__index__item__link" href="index.html">Home</a>
+              <li class="voxel-list__item">
+                <a class="voxel-list__item__link" href="index.html">Home</a>
               </li>
             <% end %>
 
             <% categoryTitles.each do |categoryTitle| %>
-              <li class="voxel-drawer__index__item">
-                <p class="voxel-drawer__index__item__text"><%= categoryTitle %></p>
-                <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+              <li class="voxel-list__item">
+                <p class="voxel-list__item__text"><%= categoryTitle %></p>
+                <ol class="voxel-list  voxel-list--ordered">
                   <% @categories.each do |category| %>
                     <% if category[0].include?(categoryTitle) %>
                       <% categoryName = category[0].split(@config['name_scope']).last %>
                       <% if categoryName == title.split(@config['name_scope']).last %>
-                        <li class="voxel-drawer__index__item">
-                          <a class="voxel-drawer__index__item__link  voxel-drawer__index__item__link--active" href="<%= category[1] %>"><%= categoryName %></a>
+                        <li class="voxel-list__item">
+                          <a class="voxel-list__item__link  voxel-list__item__link--active" href="<%= category[1] %>"><%= categoryName %></a>
                         </li>
                       <% else %>
-                        <li class="voxel-drawer__index__item">
-                          <a class="voxel-drawer__index__item__link" href="<%= category[1] %>"><%= categoryName %></a>
+                        <li class="voxel-list__item">
+                          <a class="voxel-list__item__link" href="<%= category[1] %>"><%= categoryName %></a>
                         </li>
                       <% end %>
                     <% end %>
@@ -85,7 +85,7 @@
                 </ol>
               </li>
             <% end %>
-          </ol> <!-- /.voxel-drawer__index -->
+          </ol> <!-- /.voxel-list -->
         </div> <!-- /.voxel-layout__content -->
       </aside> <!-- /.voxel-drawer -->
     </div> <!-- /.voxel-hologram__content -->
