@@ -7,6 +7,7 @@
   padding-left: $voxel-hologram-code-block__example__padding--left;
   padding-right: $voxel-hologram-code-block__example__padding--right;
   padding-top: $voxel-hologram-code-block__example__padding--top;
+  position: relative;
 
   &:before {
     background-image: url("../images/example.png");
