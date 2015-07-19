@@ -1,6 +1,6 @@
 // Set a root font size as Voxel uses `rem`s for measurements.
 /*html*/#voxel {
-  font-size: $voxel-font__font-size--base;
+  font-size: $voxel-font__font-size;
 
   // Do not style `body` because we do not want to touch the user's styles.
   // Instead style everything inside `.voxel-hologram__content` only. That's ours.
