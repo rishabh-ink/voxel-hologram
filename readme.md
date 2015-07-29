@@ -1,6 +1,6 @@
 # voxel-hologram [:star:](http://voxel-hologram-example-rsr.herokuapp.com/dist/docs)
 
-> A minimal Hologram theme based on Voxel.
+> A minimal Hologram theme based on [Voxel](https://github.com/rishabhsrao/voxel).
 
 [![Travis](https://img.shields.io/travis/rishabhsrao/voxel-hologram.svg?style=flat-square "Build status")](https://travis-ci.org/rishabhsrao/voxel-hologram)
 [![Gemnasium](https://img.shields.io/gemnasium/rishabhsrao/voxel-hologram.svg?style=flat-square "Dependency status")](https://gemnasium.com/rishabhsrao/voxel-hologram)
