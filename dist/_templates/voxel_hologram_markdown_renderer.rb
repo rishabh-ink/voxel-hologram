@@ -10,9 +10,24 @@ class VoxelHologramMarkdownRenderer < Redcarpet::Render::HTML
 
         '<script>' + code + '</script>' +
 
-        '<div class="voxel-code-snippet  voxel-code-snippet--js  syntax">' +
-          '<pre>' + formatter.format(lexer.lex(code)) + '</pre>' +
-        '</div> <!-- /.voxel-code-snippet -->' +
+        '<div class="voxel-hologram-code-block">' +
+          '<div class="voxel-code-snippet  voxel-code-snippet--js  syntax">' +
+            '<pre>' + formatter.format(lexer.lex(code)) + '</pre>' +
+          '</div> <!-- /.voxel-code-snippet -->' +
+        '</div> <!-- /.voxel-hologram-code-block -->' +
+
+        '<div class="voxel-hologram__content">'
+
+      elsif language.include?('css')
+        lexer = Rouge::Lexer.find('css')
+
+        '</div> <!-- /.voxel-hologram__content -->' +
+
+        '<div class="voxel-hologram-code-block">' +
+          '<div class="voxel-code-snippet  voxel-code-snippet--css  syntax">' +
+            '<pre>' + formatter.format(lexer.lex(code)) + '</pre>' +
+          '</div> <!-- /.voxel-code-snippet -->' +
+        '</div> <!-- /.voxel-hologram-code-block -->' +
 
         '<div class="voxel-hologram__content">'
 
