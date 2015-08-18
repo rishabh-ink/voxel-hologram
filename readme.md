@@ -42,7 +42,10 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
   documentation_assets: '<Path to your bower_components directory>/voxel-hologram/dist'
 
   # This directory contains the templates required to generate the different types of code examples viz. html_example, js_example, table_example, jsx_example.
-  code_example_templates: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_examples'
+  code_example_templates: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_examples_templates'
+
+  # This directory contains your custom code renderers. For example, if you want to have coffee_examples in your code, write a CoffeeScript renderer and place it in this folder.
+  code_example_renderers: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_example_renderers'
 
   # This file renders the code example and prints the code.
   custom_markdown: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/voxel_hologram_markdown_renderer.rb'
@@ -173,3 +176,5 @@ bundle clean --force && bundle install
 See [license.md](license.md).
 
 The file, [voxel_hologram_markdown_renderer.rb](app/_templates/voxel_hologram_markdown_renderer.rb), was borrowed from the [Cortana](https://github.com/Yago/Cortana) project.
+
+The folders, [code_example_renderers](app/_templates/code_example_renderers) and [code_example_templates](app/_templates/code_example_templates), were borrowed from the [Pivotal UI](https://github.com/pivotal-cf/pivotal-ui) project.
