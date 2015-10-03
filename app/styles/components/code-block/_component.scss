@@ -12,6 +12,7 @@
   }
 
   // Remove the space between the rendered example and its code.
+  .voxel-code-snippet--display-only,
   .voxel-hologram-code-block__example + .voxel-code-snippet {
     margin-top: 0;
   }
