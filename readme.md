@@ -18,9 +18,9 @@ See the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-e
 
 Voxel Hologram has the following prerequisites:
 
-* [Babel Transpiler](https://rubygems.org/gems/babel-transpiler) gem should be installed.
-* RequireJS should be used for all your style guide components.
-* jQuery v~1.10 should be present as a RequireJS module.
+* **[Babel Transpiler](https://rubygems.org/gems/babel-transpiler) gem** should be installed as Voxel Hologram supports ReactJS' JSX.
+* **RequireJS** should be used for all your style guide components.
+* **jQuery v~1.10** should be present & registered your RequireJS configuration.
 
 To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to refer the lines of code in [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example).
 
