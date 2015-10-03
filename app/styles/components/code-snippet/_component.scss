@@ -11,6 +11,14 @@
     @include voxel-code-snippet--js();
   }
 
+  .voxel-code-snippet--css {
+    @include voxel-code-snippet--css();
+  }
+
+  .voxel-code-snippet--jsx {
+    @include voxel-code-snippet--jsx();
+  }
+
   .voxel-code-snippet pre {
     @include voxel-code-snippet__pre();
   }
