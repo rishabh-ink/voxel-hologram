@@ -48,9 +48,6 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
   # This directory contains your custom code renderers. For example, if you want to have coffee_examples in your code, write a CoffeeScript renderer and place it in this folder.
   code_example_renderers: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/code_example_renderers'
 
-  # This file renders the code example and prints the code.
-  custom_markdown: '<Path to your bower_components directory>/voxel-hologram/dist/_templates/voxel_hologram_markdown_renderer.rb'
-
   # These directories contain additional images and fonts required by the Voxel theme.
   dependencies:
     - '<Path to your bower_components directory>/voxel/dist/images'
@@ -108,6 +105,19 @@ To use Voxel Hologram, follow these steps below. Follow the :flashlight: link to
 5. Run Hologram as usual, pointing to your modified Hologram configuration file. [:flashlight:](https://github.com/rishabhsrao/voxel-hologram-example/blob/master/tasks/style-doc.js#L15-L19)
 
 For further reference, see the [Voxel Hologram Example](https://github.com/rishabhsrao/voxel-hologram-example) project.
+
+
+## :leaves: Additional renderers
+
+In addition to supporting the default [Hologram renderers](https://github.com/trulia/hologram#custom-code-example-renderers), Voxel Hologram adds the following renderers:
+
+* `css_example` Displays your CSS in a CSS snippet block. Does not execute it.
+* `html_display_only_example` Displays your HTML in a HTML snippet block. Does not execute it.
+* `html_execute_only_example` Executes your HTML on the page. Does not display it.
+* `js_display_only_example` Displays your JS in a JS snippet block. Does not execute it.
+* `js_execute_only_example` Executes your JS on the page. Does not display it.
+* `jsx_display_only_example` Displays your JSX in a JSX snippet block. Does not execute it.
+* `jsx_execute_only_example` Executes your JSX on the page. Does not display it.
 
 
 ## :rowboat: Get started

@@ -1,7 +1,7 @@
 require "babel/transpiler"
 
-Hologram::CodeExampleRenderer::Factory.define "jsx" do
-  example_template "jsx_example_template"
+Hologram::CodeExampleRenderer::Factory.define "jsx_execute_only" do
+  example_template "jsx_execute_only_example_template"
 
   lexer { Rouge::Lexer.find("js") }
 
