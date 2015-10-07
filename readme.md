@@ -186,6 +186,4 @@ bundle clean --force && bundle install
 
 See [license.md](license.md).
 
-The file, [voxel_hologram_markdown_renderer.rb](app/_templates/voxel_hologram_markdown_renderer.rb), was borrowed from the [Cortana](https://github.com/Yago/Cortana) project.
-
-The folders, [code_example_renderers](app/_templates/code_example_renderers) and [code_example_templates](app/_templates/code_example_templates), were borrowed from the [Pivotal UI](https://github.com/pivotal-cf/pivotal-ui) project.
+The files in, [code_example_renderers](app/_templates/code_example_renderers) and [code_example_templates](app/_templates/code_example_templates), were inspired from the [Pivotal UI](https://github.com/pivotal-cf/pivotal-ui) project and the [Cortana](https://github.com/Yago/Cortana) project.
